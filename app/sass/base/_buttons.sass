@@ -7,32 +7,20 @@
 	text-decoration: none
 	outline: none
 	&:hover
-		background-color: #fff
-		color: $lightPurple
+		background-color: transparent
+		color: $accent
 		border: 2px solid $accent
 		text-decoration: none
 		transition: all .5s ease
 	&:focus
 		text-decoration: none
-		color: #fff
+		color: $accent
 		&::after
 			opacity: .22
 	&:active
-		background-color: darken($accent, 5%)
+		background-color: transparent
 		&::after
 			opacity: .32
-
-// .find-room
-// 	&-big
-// 		padding: 1.3rem 5.2rem
-// 	&-round
-// 		border-radius: 40px
-// 	&-button-text
-// 		font-size: 1.2rem
-// 	&-fa
-// 		font-size: 1.2rem
-// 		transform: rotate(90deg)
-// 		margin-left: .5rem
 
 .button--secondary
 	display: block
@@ -53,3 +41,6 @@
 	padding: 1rem 3rem
 	letter-spacing: 1px
 	border-radius: 5px
+.enjoy-us__button
+	text-transform: uppercase
+	padding: 1rem 4rem

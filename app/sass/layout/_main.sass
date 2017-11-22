@@ -1,43 +1,39 @@
 main
-	padding: 0 1rem
-	.communication
-		padding: 0 1rem 1rem 1rem
-		justify-content: space-between
-		display: flex
-		&__massage--blue, &__call--blue, &__profile--blue
-			color: $lightPurple
-		&__massage, &__call, &__profile
-			display: flex
-			flex-direction: column
+	.first-section
+		background: url(../img/backgrounds/bg2.jpg) no-repeat
+		background-attachment: scroll
+		background-size: cover
+		height: 60vh
+		position: relative
+		border-top: 1px solid $accent
+		.enjoy-us-wrapper
+			padding-top: 15%
+			.enjoy-us
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				align-items: center
+				padding: 2rem 0
+				background-color: rgba(43, 30, 40, .8)
+				&__header, &__text
+					text-align: center
+					font-style: normal
+					color: #fff
+					
+				&__header
+					text-transform: uppercase
+					font-weight: normal
+					font-size: 2rem
+					font-style: italic
+					
+				&__text
+					margin-top: 1rem
+					font-weight: 200
+					line-height: 1.1rem
 
-		.massage__button, .call__button, .profile__button
-			text-align: center
-			padding: 1rem 1.2rem
-			border-radius: 5px
-			.button__fa
-				font-size: 2rem
 
-		.massage__button-description, .call__button-description, .profile__button-description
-			padding-bottom: .5rem
-			text-align: center
-		
-	.find-room
-		display: flex
-		justify-content: center
-
-	.location
-		padding: 1rem 0
-		&-wrapper
-			.location__address
-				border: 2px solid $accent
-				.address
-					&__header
-						text-transform: uppercase
-						color: $lightPurple
-						font-size: 1.5rem
-					&__details
-					&__marker
-
-			.location__map
-		
+			.enjoy-us__button
+				margin: auto
+				margin-top: 1rem
+				
 
