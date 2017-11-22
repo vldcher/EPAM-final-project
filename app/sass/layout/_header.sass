@@ -1,21 +1,50 @@
 header
-	padding: 1rem 1rem 0 1rem
+	background-color: $darkPurple
 	.page-header
 		&__hotel-name
 			font-size: 2rem
 			text-align: center
-			.hotel-name--gold-name
-				color: $accent
-				font-weight: bold
 		&__logo-menu-wrapper
 			display: flex
 			flex-direction: row
 			justify-content: space-between
 			align-items: center
-			padding: .5rem 0
+			padding: 1rem
 			.logo-menu-wrapper
-				
 				&__logo
 					img
 						max-width: 100px
-				&__mobile-menu-icon
+				&__mobile-menu-button
+					.hamburger
+						outline: none
+						z-index: 5
+						&:hover
+							opacity: .7
+						.hamburger-box
+							width: 40px
+
+					.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+						height: 3px
+						background-color: $accent
+
+	.communications
+		padding: 0 1rem
+		.contacts
+			&__phone, &__mail
+				padding-bottom: 1rem
+				.phone__fa, .mail__fa
+					margin-right: .5rem
+					color: $accent
+				.contacts__text--accent
+					color: $lightPurple
+	.social
+		display: flex
+		&__facebook, &__twitter, &__google-plus
+			margin-right: 1rem
+			.fa
+				&-facebook, &-twitter, &-google-plus
+					color: $lightPurple
+				&:hover
+					color: $accent
+					cursor: pointer
+					transition: all .5s ease
