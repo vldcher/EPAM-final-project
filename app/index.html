@@ -12,8 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="shortcut button" href="img/favbutton/favbutton.ico" type="image/x-button">
+	<link rel="apple-touch-button" href="img/favbutton/apple-touch-button.png">
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
@@ -27,34 +27,109 @@
 </head>
 
 <body>
-
 	<header>
 		<div class="page-header">
-			<div class="page-header__logo logo"></div>
+			<div class="page-header__hotel-name">
+				<h2 class="hotel-name--gold-name">Golden Eagle Hotel</h2>
+			</div>
+			<div class="page-header__logo-menu-wrapper">
+				<div class="logo-menu-wrapper__logo">
+					<img src="img/logo.png" alt="Golden Eagle Hotel"/>
+				</div>
+				<div class="logo-menu-wrapper__mobile-menu-button mobile-menu-button">
+					<img src="img/ham.png" alt="Menu hamburger">
+				</div>
+			</div>
 			<div class="page-header__main-part main-part ">
 				<div class="main-part__top-line top-line">
-					
+					<!--<div class="top-line__slogan slogan">Beauty Prestige Refinement</div>-->
+					<div class="top-line__mail "><i class="mail__fa fa fa-envelope-o"></i>info@goldeneaglehotel.com.ua</div>
+					<div class="top-line__phone "><i class="phone__fa fa fa-phone"></i>+380123456789</div>
+					<div class="top-line__address "><i class="address__fa fa fa-map-marker"></i>st. Great Northern, 12, Kyiv, Ukraine, 01488</div>
 				</div>
 				<div class="main-part__down-line down-line">
 					<ul class="down-line__menu menu">
-							<li class="menu__item item"><a href="#" class="item__link link">Main</a></li>
-							<li class="menu__item item"><a href="#" class="item__link link">About us</a></li>
-							<li class="menu__item item"><a href="#" class="item__link link">Gallery</a></li>
-							<li class="menu__item item"><a href="#" class="item__link link">Rooms</a></li>
-							<li class="menu__item item"><a href="#" class="item__link link">Services</a></li>
-							<li class="menu__item item"><a href="#" class="item__link link">Contacts</a></li>
-							<li class="menu__item item"><a href="#" class="item__link link">Reservation</a></li>
-						</ul>	
+						<li class="menu__item"><a href="#" class="item__link">Main</a></li>
+						<li class="menu__item"><a href="#" class="item__link">Reservation</a></li>
+						<li class="menu__item"><a href="#" class="item__link">About us</a></li>
+						<li class="menu__item"><a href="#" class="item__link">Gallery</a></li>
+						<li class="menu__item"><a href="#" class="item__link">Rooms</a></li>
+						<li class="menu__item"><a href="#" class="item__link">Services</a></li>
+						<li class="menu__item"><a href="#" class="item__link">Contacts</a></li>
+					</ul>	
 				</div>
 			</div>
-			<div class="page-header__registration"></div>
+			<div class="page-header__registration registration">
+				<div class="registration__sign-in">Sign In</div>
+				<div class="registration__sign-up">Sign Up</div>
+			</div>
 		</div>
 	</header>
+	<main>
+		<section class="communication">
 
-	<main></main>
-	
+			<div class="communication__massage communication__massage--blue">
+				<div class="massage__button-description">
+					<p class="button-descroption__text--gold">Massage</p>
+				</div>
+				<button class="massage__button button--secondary">
+					<i class="button__fa fa fa-envelope-o"></i>
+				</button> 
+			</div>
+
+			<div class="communication__call communication__call--blue">
+				<div class="call__button-description">
+					<p class="button-descroption__text--gold">Call</p>
+				</div>
+				<button class="call__button button--secondary">
+					<i class="button__fa fa fa-phone"></i>
+				</button> 
+			</div>
+
+			<div class="communication__profile communication__profile--blue">
+				<div class="profile__button-description">
+					<p class="button-descroption__text--gold">Profile</p>
+				</div>
+				<button class="profile__button button--secondary">
+					<i class="button__fa fa fa-user"></i>
+				</button> 
+			</div>
+		</section>
+		<div class="find-room">
+			<button class="find-room__button find-room-big find-room-round button--primary"> <span class="find-room-button-text">Find room</span> <i class="find-room-fa fa fa-search"></i></button>
+		</div>
+		<section class="location">
+			<div class="location-wrapper">
+				<div class="location__address">
+					<h4 class="address__header">Our address:</h4>
+					<h6 class="address__details"><i class="address__marker fa fa-map-marker"></i>st. Great Northern, 12, Kyiv, Ukraine</h6>
+				</div>
+				<div class="location__map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2199.063300601934!2d30.454105277655096!3d50.4468051271465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc2769aeb0ed%3A0x58aedb38ca744505!2z0YPQuy4g0J_QvtC70LXQstCw0Y8!5e0!3m2!1sru!2sua!4v1511291720522" width="288" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+<!-- 			<div>
+			<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		</div> -->
 	<footer></footer>
-	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
 

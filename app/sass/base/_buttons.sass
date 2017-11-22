@@ -1,14 +1,17 @@
-.button_primary
+.button--primary
 	display: block
 	text-align: center
 	background-color: $accent
 	color: #fff
+	border: 2px solid transparent
 	text-decoration: none
+	outline: none
 	&:hover
 		background-color: #fff
-		color: $accent
+		color: $darkBlue
 		border: 2px solid $accent
 		text-decoration: none
+		transition: all .5s ease
 	&:focus
 		text-decoration: none
 		color: #fff
@@ -19,16 +22,29 @@
 		&::after
 			opacity: .32
 
-.button_secondary
+.find-room
+	&-big
+		padding: 1.3rem 5.2rem
+	&-round
+		border-radius: 40px
+	&-button-text
+		font-size: 1.2rem
+	&-fa
+		font-size: 1.2rem
+		transform: rotate(90deg)
+		margin-left: .5rem
+
+.button--secondary
 	display: block
 	border: 2px solid $accent
-	color: $accent
+	color: $darkBlue
 	background-color: #fff
 	text-decoration: none
+	outline: none
 	&:hover
 		text-decoration: none
 		color: #fff
-		background-color: lighten($accent, 6%)
-		transition: background-color .25s ease
-		border: none
+		background-color: $accent
+		transition: all .5s ease
+		border: 2px solid transparent
 
