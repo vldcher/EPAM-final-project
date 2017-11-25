@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
 
@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
-		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 
 	<!-- Chrome, Firefox OS and Opera -->
@@ -88,24 +88,51 @@
 		<section class="first-section">
 			<div class="enjoy-us-wrapper">
 				<div class="enjoy-us">
-				<h1 class="enjoy-us__header">Enjoy your stay</h1>
-				<h4 class="enjoy-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat commodi totam sint, illo incidunt quis, eius eum iure et!</h4>
+					<h1 class="enjoy-us__header">Enjoy your stay</h1>
+					<h4 class="enjoy-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat commodi totam sint, illo incidunt quis, eius eum iure et!</h4>
+				</div>
+				<button class="enjoy-us__button button--primary">Read more</button>
 			</div>
-			<button class="enjoy-us__button button--primary">Read more</button>
-		</div>
-		<div class="find-room">
-			<form>
-  Quantity (between 1 and 5):
-  <input type="number" name="quantity" min="1" max="5">
-</form>
-		</div>
-
+			<div class="find-room">
+				<form action="#">
+					<div class="find-room__date-info">
+						<p>Arriaval date:</p>
+						<input type="date" id="arrivalDate" name="bday" required>
+						<p>Departure date:</p>
+						<input type="date" id="departureDate" name="bday" required>
+					</div>
+					<h6>Number of guests :</h6>
+					<div class="find-room__quantity-info">
+						<input type="number" name="quantity" min="1" max="10" placeholder="Adults" pattern="[0-9]*" required>
+						<input type="number" name="quantity" min="1" max="10" placeholder="Children" pattern="[0-9]*" >
+					</div>
+					<div class="find-room__check-availability">
+						<button class="check-availability-button button--primary" type="submit">
+							check availability
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="second-section">
+			<h2 class="conveniences__header">Your conveniences</h2>
+			<div class="conveniences__content">
+				<div class="service">
+					<div class="service__image">
+						
+					</div>
+					<div class="service__header">
+						
+					</div>
+				</div>
+				
+			</div>
 		</section>
 
 
 	</main>
 
-	
+
 	<footer></footer>
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>

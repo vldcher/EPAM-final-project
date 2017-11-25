@@ -27,7 +27,7 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
-		// 'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/jquery/dist/jquery.min.js',
 		// 'app/libs/bootstrap/dist/js/bootstrap.min.js',
 		'app/js/common.min.js', // always last
 		])

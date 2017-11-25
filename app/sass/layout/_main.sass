@@ -3,17 +3,18 @@ main
 		background: url(../img/backgrounds/bg2.jpg) no-repeat
 		background-attachment: scroll
 		background-size: cover
-		height: 60vh
+		height: 85vh
 		position: relative
 		border-top: 1px solid $accent
 		.enjoy-us-wrapper
-			padding-top: 15%
+			// padding-top: 15%
 			.enjoy-us
 				display: flex
 				flex-direction: column
 				justify-content: space-between
 				align-items: center
-				padding: 2rem 0
+				padding: 1rem 0
+				margin-top: 2rem
 				background-color: rgba(43, 30, 40, .8)
 				&__header, &__text
 					text-align: center
@@ -34,6 +35,47 @@ main
 
 			.enjoy-us__button
 				margin: auto
-				margin-top: 1rem
-				
+				margin-top: 2rem
+		
+		.find-room
+			background-color: $middlePurple
+			margin-top: 2rem
+			border-bottom: 2px solid $accent
+			form
+				// display: flex
+				// justify-content: space-around
+				padding-top: 1rem
+				margin: 0 auto
+				.find-room__date-info
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
+					p
+						color: #fff
+						margin: .5rem
 
+
+					input[type="date"]
+						padding: .5rem 1rem
+						color: 
+
+				.find-room__quantity-info
+					padding-top: 1rem
+					display: flex
+					justify-content: space-around
+					input[type="number"]
+						width: 7rem
+						padding: .5rem
+				h6
+					color: #fff
+					padding-top: 1rem
+					text-align: center
+
+				.find-room__check-availability
+					.check-availability-button
+						margin: auto
+						margin-top: 2rem
+						margin-bottom: 2rem
+
+				
