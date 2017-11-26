@@ -11,6 +11,22 @@ header
 			align-items: center
 			padding: 1rem 1rem 0 1rem
 			border-bottom: 1px solid #3d303a
+			.desktop-menu-wrapper
+				.desktop-menu
+					&__menu-list
+						display: flex
+						.menu-list__item
+							margin-right: 1rem
+							.item__link
+								text-transform: uppercase
+								text-decoration: none
+								color: #fff
+								&:hover
+									cursor: pointer
+									color: $accent
+									transition: all .5s ease
+
+
 			.logo-menu-wrapper
 				&__logo
 					img
@@ -31,13 +47,14 @@ header
 	.communications
 		padding: 1rem 1rem 0 1rem
 		.contacts
-			&__phone, &__mail
+			&__phone, &__mail, &__address
 				padding-bottom: 1rem
-				.phone__fa, .mail__fa
+				.phone__fa, .mail__fa, .address__fa
 					margin-right: .5rem
 					color: $accent
 				.contacts__text--accent
 					color: $lightPurple
+
 	.social
 		display: flex
 		&__facebook, &__twitter, &__google-plus
