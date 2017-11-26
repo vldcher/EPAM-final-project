@@ -3,7 +3,7 @@ main
 		background: url(../img/backgrounds/bg2.jpg) no-repeat
 		background-attachment: scroll
 		background-size: cover
-		height: 85vh
+		// height: 85vh
 		position: relative
 		border-top: 1px solid $accent
 		.enjoy-us-wrapper
@@ -78,4 +78,66 @@ main
 						margin-top: 2rem
 						margin-bottom: 2rem
 
-				
+	.second-section
+		background-color: $lightGray
+		.conveniences
+			padding-top: 3rem
+			&__header
+				text-transform: uppercase
+				color: $lightPurple
+				font-family: Conduit
+				padding: 0 1rem 1rem 1rem
+				font-size: 2rem
+
+
+			&__content
+				.service
+					margin-top: 1rem
+					margin-bottom: 3rem
+					display: flex
+					flex-direction: column
+					align-items: center
+					// &:hover
+					// 	cursor: pointer
+					// 	.service
+					// 		&-more-info
+					// 			.fa-more-info
+					// 				color: $accent
+
+
+					&__image
+						
+						img
+							width: 100%
+							height: 180px
+							max-width: 280px
+
+						
+					&__info
+						background-color: #FFF
+						width: 100%
+						max-width: 280px
+						display: flex
+						flex-direction: column
+						align-items: center
+						.service
+							&-header
+								padding: 1rem 1rem 0 1rem
+								font-family: Conduit
+								color: $lightPurple
+								font-size: 2rem
+								white-space: nowrap
+
+							&-more-info
+								color: $lightPurple
+								font-size: 3rem
+								position: relative
+								top: 1.6rem
+								.fa-more-info
+									background: linear-gradient(to top, $lightGray 0%,  #fff 100%)
+									&:hover
+										color: $accent
+										cursor: pointer
+										transition: all .5s ease
+
+
