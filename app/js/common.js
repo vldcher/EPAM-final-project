@@ -33,3 +33,41 @@ function getFormattedDate (date) {
 
 document.getElementById('arrivalDate').valueAsDate = new Date();
 document.getElementById('departureDate').valueAsDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+
+//menu
+	var $menu = $("#my-menu").mmenu({
+		"extensions": [
+		"pagedim-black",
+		"theme-dark",
+		"fx-menu-zoom",
+		"listview-huge",
+		"border-full"
+		],
+		"offCanvas": {
+			"position": "right"
+		}
+
+	});
+	var $icon = $("#mmenu-icon");
+	var API = $menu.data( "mmenu" );
+	$icon.on( "click", function() {
+		API.open();
+	});
+
+	API.bind( "opened", function() {
+		setTimeout(function() {
+			$icon.addClass( "is-active" );
+		}, 100);
+		$icon.on( "click", function() {
+			API.close();
+		});
+	});
+
+	API.bind( "closed", function() {
+		setTimeout(function() {
+			$icon.removeClass( "is-active" );
+		}, 100);
+		$icon.on( "click", function() {
+			API.open();
+		});
+	});

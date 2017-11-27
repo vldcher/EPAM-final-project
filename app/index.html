@@ -26,221 +26,251 @@
 
 </head>
 <body>
-	<header>
-		<div class="page-header">
-			<div class="page-header__logo-menu-wrapper">
-				<div class="logo-menu-wrapper__logo">
-					<img src="img/logo.png" alt="Hotel Locanda"/>
-				</div>
-				<!-- mobile menu hamburger icon -->
-				<div class="logo-menu-wrapper__mobile-menu-button">
-					<button class="hamburger hamburger--collapse" type="button">
-						<span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-						</span>
-					</button>
-				</div>
-				<!-- Desktop menu-->
-				<div class="desktop-menu-wrapper">
-					<div class="desktop-menu">
-						<ul class="desktop-menu__menu-list">
-							<li class="menu-list__item"><a href="#" class="item__link">Home</a></li>
-							<li class="menu-list__item"><a href="#" class="item__link">Reservation</a></li>
-							<li class="menu-list__item"><a href="#" class="item__link">About us</a></li>
-							<li class="menu-list__item"><a href="#" class="item__link">Gallery</a></li>
-							<li class="menu-list__item"><a href="#" class="item__link">Rooms</a>
-								<ul class="submenu">
-									<li><a href=#>Luxury</a></li>
-									<li><a href=#>Special</a></li>
-									<li><a href=#>Comfort</a></li>
-									<li><a href=#>Econom</a></li>
+	<div id="my-page">
+		<header>
+			<div class="page-header">
+				<div class="page-header__logo-menu-wrapper">
+					<div class="logo-menu-wrapper__logo">
+						<img src="img/logo.png" alt="Hotel Locanda"/>
+					</div>
+					<!-- mobile menu hamburger icon -->
+					<div class="logo-menu-wrapper__mobile-menu-button">
+						<button class="hamburger hamburger--collapse" id="mmenu-icon" type="button">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+					</div>
+					<!-- 	mobile menu -->
+					<nav id="my-menu">
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/">Reservation</a></li>
+							<li><a href="/">About us</a></li>
+							<li><a href="/">Gallery</a></li>
+							<li><a href="/rooms/">Rooms</a>
+								<ul>
+									<li><a href="/rooms/history/">Luxury</a></li>
+									<li><a href="/rooms/team/">Special</a></li>
+									<li><a href="/rooms/address/">Comfort</a></li>
+									<li><a href="/rooms/address/">Econom</a></li>
 								</ul>
 							</li>
-							<li class="menu-list__item"><a href="#" class="item__link">Services</a>
-								<ul class="submenu">
-									<li><a href=#>SPA</a></li>
-									<li><a href=#>Swimming pool</a></li>
-									<li><a href=#>Restaurant</a></li>
-									<li><a href=#>Conference</a></li>
+							<li><a href="/services/">Services</a>
+								<ul>
+									<li><a href="/services/spa/">SPA</a></li>
+									<li><a href="/services/swimming-pool/">Swimming pool</a></li>
+									<li><a href="/services/restaurant/">Restaurant</a></li>
+									<li><a href="/services/conference/">Conference hall</a></li>
 								</ul>
 							</li>
-							<li class="menu-list__item"><a href="#" class="item__link">Contacts</a></li>
-						</ul>	
-					</div>
-				</div>
-				<!-- Desktop end-->
-			</div>
-			<div class="communications">
-				<div class="contacts__phone">
-					<i class="phone__fa fa fa-phone"></i>
-					<span class="contacts__text--accent">+38-(093)-213-214</span>
-				</div>
-				<div class="contacts__mail">
-					<i class="mail__fa fa fa-envelope-o"></i>
-					<span class="contacts__text--accent">info@yourdomain.com</span>
-				</div>
-				<div class="contacts__address ">
-					<i class="address__fa fa fa-map-marker"></i>
-					<span class="contacts__text--accent">	st. Great Northern 12, Kyiv, Ukraine</span>
-				</div>
-				<div class="social">
-					<div class="social__facebook"><i class="fa fa-facebook"></i></div>
-					<div class="social__twitter"><i class="fa fa-twitter"></i></div>
-					<div class="social__google-plus"><i class="fa fa-google-plus"></i></div>
-				</div>
-				<!-- 	<button class="page-header-button button--primary">Book now</button> -->
-			</div>
-		</div>
-
-	</header>
-
-
-	<main>
-		<section class="first-section">
-			<div class="enjoy-us-wrapper">
-				<div class="enjoy-us">
-					<h1 class="enjoy-us__header">Enjoy your stay</h1>
-					<h4 class="enjoy-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat commodi totam sint, illo incidunt quis, eius eum iure et!</h4>
-				</div>
-				<button class="enjoy-us__button button--primary">Read more</button>
-			</div>
-
-		</section>
-		<div class="find-room">
-			<form action="#">
-				<div class="find-room__date-info">
-					<div class="arrival-date">
-						<p>Arriaval date:</p>
-						<input type="date" id="arrivalDate" name="bday" required>
-					</div>
-					<div class="departure-date">
-						<p>Departure date:</p>
-						<input type="date" id="departureDate" name="bday" required>
-					</div>
-
-				</div>
-
-				<div class="find-room__quantity-info">
-					<h6 class="guests-quantity-header">Number of guests :</h6>
-					<div class="guests-quantity-input">
-						<input type="number" name="quantity" min="1" max="10" placeholder="Adults" pattern="[0-9]*" required>
-						<input type="number" name="quantity" min="1" max="10" placeholder="Children" pattern="[0-9]*" >
-					</div>
-				</div>
-				<div class="find-room__check-availability">
-					<button class="check-availability-button button--primary" type="submit">
-						check availability
-					</button>
-				</div>
-			</form>
-		</div>
-		<section class="second-section">
-			<div class="conveniences">
-				<h2 class="conveniences__header">our conveniences</h2>
-				<div class="conveniences__content">
-					<div class="service">
-						<div class="service__image view view-first">
-							<img src="img/SPA/spa1.jpg" alt="SPA">
-							<div class="mask">
-								<a href="#" class="info"><i class="fa fa-info-circle"></i></a>
-							</div>
-						</div>
-						<div class="service__info">
-							<div class="service-header">
-								<h3>SPA</h3>
-							</div>
-							<div class="service-more-info">
-								<i class="fa-more-info fa fa-plus-square-o"></i>
-							</div>
+							<li><a href="/contacts/">Contacts</a></li>
+						</ul>
+					</nav>
+					<!-- 	mobile menu end-->
+					
+					<!-- Desktop menu-->
+					<div class="desktop-menu-wrapper">
+						<div class="desktop-menu" id="desktop-menu">
+							<ul class="desktop-menu__menu-list">
+								<li class="menu-list__item"><a href="#" class="item__link">Home</a></li>
+								<li class="menu-list__item"><a href="#" class="item__link">Reservation</a></li>
+								<li class="menu-list__item"><a href="#" class="item__link">About us</a></li>
+								<li class="menu-list__item"><a href="#" class="item__link">Gallery</a></li>
+								<li class="menu-list__item"><a href="#" class="item__link">Rooms</a>
+									<ul class="submenu">
+										<li><a href=#>Luxury</a></li>
+										<li><a href=#>Special</a></li>
+										<li><a href=#>Comfort</a></li>
+										<li><a href=#>Econom</a></li>
+									</ul>
+								</li>
+								<li class="menu-list__item"><a href="#" class="item__link">Services</a>
+									<ul class="submenu">
+										<li><a href=#>SPA</a></li>
+										<li><a href=#>Swimming pool</a></li>
+										<li><a href=#>Restaurant</a></li>
+										<li><a href=#>Conference</a></li>
+									</ul>
+								</li>
+								<li class="menu-list__item"><a href="#" class="item__link">Contacts</a></li>
+							</ul>	
 						</div>
 					</div>
-					<div class="service">
-						<div class="service__image view view-first">
-							<img src="img/swimming-pool/pool3.jpg" alt="Swimming pool">
-							<div class="mask">
-								<a href="#" class="info"><i class="fa fa-info-circle"></i></a>
-							</div>
-						</div>
-						<div class="service__info">
-							<div class="service-header">
-								<h3>Swimming pool</h3>
-							</div>
-							<div class="service-more-info">
-								<i class="fa-more-info fa fa-plus-square-o"></i>
-							</div>
-						</div>
+					<!-- Desktop end-->
+				</div>
+				<div class="communications">
+					<div class="contacts__phone">
+						<i class="phone__fa fa fa-phone"></i>
+						<span class="contacts__text--accent">+38-(093)-213-214</span>
 					</div>
-					<div class="service">
-						<div class="service__image view view-first">
-							<img src="img/restaurant/restaurant1.jpg" alt="restaurant">
-							<div class="mask">
-								<a href="#" class="info"><i class="fa fa-info-circle"></i></a>
-							</div>
-						</div>
-						<div class="service__info">
-							<div class="service-header">
-								<h3>Restaurant</h3>
-							</div>
-							<div class="service-more-info">
-								<i class="fa-more-info fa fa-plus-square-o"></i>
-							</div>
-						</div>
+					<div class="contacts__mail">
+						<i class="mail__fa fa fa-envelope-o"></i>
+						<span class="contacts__text--accent">info@yourdomain.com</span>
 					</div>
-					<div class="service">
-						<div class="service__image view view-first">
-							<img src="img/conference/conference1.jpg" alt="conference hall">
-							<div class="mask">
-								<a href="#" class="info"><i class="fa fa-info-circle"></i></a>
-							</div>
-						</div>
-						<div class="service__info">
-							<div class="service-header">
-								<h3>Conference hall</h3>
-							</div>
-							<div class="service-more-info">
-								<i class="fa-more-info fa fa-plus-square-o"></i>
-							</div>
-						</div>
+					<div class="contacts__address ">
+						<i class="address__fa fa fa-map-marker"></i>
+						<span class="contacts__text--accent">	st. Great Northern 12, Kyiv, Ukraine</span>
 					</div>
-
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
+					<div class="social">
+						<div class="social__facebook"><i class="fa fa-facebook"></i></div>
+						<div class="social__twitter"><i class="fa fa-twitter"></i></div>
+						<div class="social__google-plus"><i class="fa fa-google-plus"></i></div>
+					</div>
+					<!-- 	<button class="page-header-button button--primary">Book now</button> -->
 				</div>
 			</div>
 
-		</section>
+		</header>
 
 
-	</main>
+		<main>
+			<section class="first-section">
+				<div class="enjoy-us-wrapper">
+					<div class="enjoy-us">
+						<h1 class="enjoy-us__header">Enjoy your stay</h1>
+						<h4 class="enjoy-us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat commodi totam sint, illo incidunt quis, eius eum iure et!</h4>
+					</div>
+					<button class="enjoy-us__button button--primary">Read more</button>
+				</div>
+
+			</section>
+			<div class="find-room">
+				<form action="#">
+					<div class="find-room__date-info">
+						<div class="arrival-date">
+							<p>Arriaval date:</p>
+							<input type="date" id="arrivalDate" name="bday" required>
+						</div>
+						<div class="departure-date">
+							<p>Departure date:</p>
+							<input type="date" id="departureDate" name="bday" required>
+						</div>
+
+					</div>
+
+					<div class="find-room__quantity-info">
+						<h6 class="guests-quantity-header">Number of guests :</h6>
+						<div class="guests-quantity-input">
+							<input type="number" name="quantity" min="1" max="10" placeholder="Adults" pattern="[0-9]*" required>
+							<input type="number" name="quantity" min="1" max="10" placeholder="Children" pattern="[0-9]*" >
+						</div>
+					</div>
+					<div class="find-room__check-availability">
+						<button class="check-availability-button button--primary" type="submit">
+							check availability
+						</button>
+					</div>
+				</form>
+			</div>
+			<section class="second-section">
+				<div class="conveniences">
+					<h2 class="conveniences__header">our conveniences</h2>
+					<div class="conveniences__content">
+						<div class="service">
+							<div class="service__image view view-first">
+								<img src="img/SPA/spa1.jpg" alt="SPA">
+								<div class="mask">
+									<a href="#" class="info"><i class="fa fa-info-circle"></i></a>
+								</div>
+							</div>
+							<div class="service__info">
+								<div class="service-header">
+									<h3>SPA</h3>
+								</div>
+								<div class="service-more-info">
+									<i class="fa-more-info fa fa-plus-square-o"></i>
+								</div>
+							</div>
+						</div>
+						<div class="service">
+							<div class="service__image view view-first">
+								<img src="img/swimming-pool/pool3.jpg" alt="Swimming pool">
+								<div class="mask">
+									<a href="#" class="info"><i class="fa fa-info-circle"></i></a>
+								</div>
+							</div>
+							<div class="service__info">
+								<div class="service-header">
+									<h3>Swimming pool</h3>
+								</div>
+								<div class="service-more-info">
+									<i class="fa-more-info fa fa-plus-square-o"></i>
+								</div>
+							</div>
+						</div>
+						<div class="service">
+							<div class="service__image view view-first">
+								<img src="img/restaurant/restaurant1.jpg" alt="restaurant">
+								<div class="mask">
+									<a href="#" class="info"><i class="fa fa-info-circle"></i></a>
+								</div>
+							</div>
+							<div class="service__info">
+								<div class="service-header">
+									<h3>Restaurant</h3>
+								</div>
+								<div class="service-more-info">
+									<i class="fa-more-info fa fa-plus-square-o"></i>
+								</div>
+							</div>
+						</div>
+						<div class="service">
+							<div class="service__image view view-first">
+								<img src="img/conference/conference1.jpg" alt="conference hall">
+								<div class="mask">
+									<a href="#" class="info"><i class="fa fa-info-circle"></i></a>
+								</div>
+							</div>
+							<div class="service__info">
+								<div class="service-header">
+									<h3>Conference hall</h3>
+								</div>
+								<div class="service-more-info">
+									<i class="fa-more-info fa fa-plus-square-o"></i>
+								</div>
+							</div>
+						</div>
+
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+				</div>
+
+			</section>
 
 
-	<footer></footer>
+		</main>
+
+
+		<footer></footer>
+	</div>
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
 
