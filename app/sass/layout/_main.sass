@@ -33,7 +33,7 @@ main
 				&__text
 					margin-top: 1rem
 					font-weight: 200
-					line-height: 1.1rem
+					line-height: 1.5rem
 
 
 			.enjoy-us__button
@@ -165,8 +165,60 @@ main
 					white-space: nowrap
 					&--accent-text
 						color: $accent
-				.reason__paragraph
+				.reason__text
 					margin: 1rem 0
+					line-height: 1.5rem
 			&__button
 				display: flex
 				margin: auto
+
+	.fourth-section
+		background-color: $lightGray
+		.accomodation
+			padding: 1rem
+			&__header
+				margin-bottom: 2rem
+				.header__text
+					text-transform: uppercase
+					font-family: Conduit
+					font-size: 2.5rem
+					color: $middlePurple
+
+			&__wrapper
+				.room
+					background-color: #FFF
+					&__photo
+						img
+							width: 100%
+							height: 180px
+							max-width: 290px
+
+					&__name
+						padding: .5rem 1rem
+						.room__name--purple-big
+							color: $middlePurple
+							font-size: 1.8rem
+						.slide-border
+							position: relative
+							display: inline-block
+							&:before
+								content: ''
+								width: 50%
+								height: 2px
+								background: $accent
+								position: absolute
+								left: 0
+								bottom: 0
+								-webkit-transition: all 0.3s ease-out
+								transition: all 0.3s ease-out
+							&:hover:before
+								width: 100%
+							&:hover
+								cursor: pointer
+
+					&__description
+						padding: 0 1rem 1rem 1rem
+						line-height: 1.5rem
+						.room__description--purple
+							span
+								color: $lightPurple
