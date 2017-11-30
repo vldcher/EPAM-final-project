@@ -72,7 +72,8 @@
 				.desktop-menu-wrapper
 					display: none
 
-		.social, .page-header-button
+		.social, .page-header__button
+
 			display: none
 
 
@@ -97,6 +98,11 @@
 						input[type="number"]
 							margin-right: 1rem
 
+		.third-section
+			.reason-to-stay
+				flex-direction: row
+
+			
 
 @media only screen and (min-width : 901px)
 	header
@@ -140,6 +146,16 @@
 					.guests-quantity-header
 						padding: 0
 
+		.third-section
+			.reason-to-stay
+				justify-content: space-evenly
+				align-items: center
+				&__text
+					.reason__header
+						font-size: 2.5rem
+				&__button
+					margin: 0
+
+
 
 // @media only screen and (min-width : 1200px)
-//дані замовлення в одну лінію

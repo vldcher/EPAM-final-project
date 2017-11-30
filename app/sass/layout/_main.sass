@@ -81,7 +81,7 @@ main
 				
 
 			.find-room__check-availability
-				.check-availability-button
+				.check-availability__button
 					margin: auto
 					margin-top: 2rem
 					margin-bottom: 2rem
@@ -139,7 +139,6 @@ main
 								color: $lightPurple
 								font-size: 2rem
 								white-space: nowrap
-
 							&-more-info
 								color: $lightPurple
 								font-size: 3rem
@@ -151,3 +150,23 @@ main
 										color: $accent
 										cursor: pointer
 										transition: all .5s ease
+
+	.third-section
+		.reason-to-stay
+			display: flex
+			flex-direction: column
+			padding: 1rem
+			&__text
+				.reason__header
+					text-transform: uppercase
+					color: $middlePurple
+					font-size: 2rem
+					font-family: Conduit
+					white-space: nowrap
+					&--accent-text
+						color: $accent
+				.reason__paragraph
+					margin: 1rem 0
+			&__button
+				display: flex
+				margin: auto
