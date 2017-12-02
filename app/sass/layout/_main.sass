@@ -190,7 +190,7 @@ main
 				align-items: center
 				justify-content: center
 				.room
-					padding: 1rem
+					padding: 1rem 1rem 3rem 1rem
 					display: flex
 					flex-direction: column
 					// max-width: 280px
@@ -237,3 +237,55 @@ main
 						.room__description--purple
 							span
 								color: $lightPurple
+
+	.fifth-section
+		background-color: $darkPurple
+		border-bottom: 2px solid $accent
+		.achivements
+			&__header
+				padding-top: 4rem
+				text-transform: uppercase
+				color: #fff
+				font-size: 2.5rem
+				font-family: Conduit
+				text-align: center
+			&__content
+				display: flex
+				flex-wrap: wrap
+				align-items: center
+				justify-content: center
+				.achivement-item--square
+					width: 150px
+					height: 150px
+					margin: auto
+					overflow: hidden
+					border: 2px solid $accent
+				.achivement-item
+					margin: 3rem 3rem 0 3rem
+					color: #fff
+					font-family: Roboto
+					letter-spacing: .2rem
+					&:hover
+						background-color: $accent
+						cursor: pointer
+						transition: all .5s ease
+						.achivement-triangle
+							border-bottom: 20px solid $darkPurple
+					&__numbers
+						text-align: center
+						line-height: 6rem
+						font-weight: bold
+						font-size: 2rem
+						.achivement-value
+
+					&__kind
+						text-align: center
+
+					.achivement-triangle
+						float: right
+						margin-top: .55rem
+						margin-right: 0.3rem
+						width: 0
+						height: 0
+						border-bottom: 20px solid $accent
+						border-left: 20px solid transparent
