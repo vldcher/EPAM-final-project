@@ -1,0 +1,17 @@
+.slide-border
+	position: relative
+	display: inline-block
+	&:before
+		content: ''
+		width: 50%
+		height: 2px
+		background: $accent
+		position: absolute
+		left: 0
+		bottom: 0
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	&:hover:before
+		width: 100%
+	&:hover
+		cursor: pointer
