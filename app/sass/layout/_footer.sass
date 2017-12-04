@@ -1,0 +1,77 @@
+footer
+	.footer-content
+		background-color: $middlePurple
+		color: #fff
+		font-family: Conduit
+		padding: 1rem
+		display: flex
+		flex-wrap: wrap
+		align-items: baseline
+		justify-content: center
+		&__about-us
+			max-width: 280px
+			.about-us
+				&__header
+					margin: 1rem 0
+					text-transform: uppercase
+					font-size: 2rem
+				&__text
+					line-height: 1.5rem
+					margin-bottom: 1rem
+					color: darken(#fff, 20%)
+				&__social
+					display: flex
+					.social__facebook, .social__twitter, .social__google-plus
+						margin-right: 1rem
+						.fa
+							&-facebook, &-twitter, &-google-plus
+								color: darken(#fff, 30%)
+								font-size: 1.3rem
+							&:hover
+								color: $accent
+								cursor: pointer
+								transition: all .5s ease
+
+		&__our-address
+			width: 280px
+			.our-address
+				&__phone, &__mail, &__address
+					padding-bottom: 1rem
+					.phone__fa, .mail__fa, .address__fa
+						margin-right: .5rem
+						color: $accent
+					.our-address__text--accent
+						color: darken(#fff, 20%)
+
+			.our-address__header
+				margin: 1rem 0
+				text-transform: uppercase
+				font-size: 2rem
+		
+		&__map
+			.map
+				&__header
+					margin: 1rem 0
+					text-transform: uppercase
+					font-size: 2rem
+				&__google-maps-api
+					text-align: center
+
+	.footer-bottom
+		display: flex
+		flex-direction: column-reverse
+		align-items: center
+		padding-top: 1rem
+		padding-bottom: 1rem
+		background-color: $darkPurple
+		border-bottom: 2px solid $lightPurple
+		border-top: 1px solid $lightPurple
+		.bottom
+			&__copyright
+				font-family: Conduit
+				color: darken(#fff, 30%)
+
+			&__logo
+				img
+					max-width: 100px
+					margin-bottom: 1rem
