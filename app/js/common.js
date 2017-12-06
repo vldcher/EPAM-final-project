@@ -19,8 +19,8 @@ var today = new Date();
 var tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
 
 // Set values
-$("#theDate").val(getFormattedDate(today));
-$("#theTomorrow").val(getFormattedDate(tomorrow));
+// $("#theDate").val(getFormattedDate(today));
+// $("#theTomorrow").val(getFormattedDate(tomorrow));
 
 // Get date formatted as YYYY-MM-DD
 function getFormattedDate (date) {
@@ -31,10 +31,12 @@ function getFormattedDate (date) {
         + ("0" + date.getDate()).slice(-2);
 }
 
-document.getElementById('arrivalDate').valueAsDate = new Date();
-document.getElementById('departureDate').valueAsDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+// document.getElementById('arrivalDate').valueAsDate = new Date();
+// document.getElementById('departureDate').valueAsDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
 
-//menu
+
+$(function() {
+	//menu
 	var $menu = $("#my-menu").mmenu({
 		"extensions": [
 		"pagedim-black",
@@ -71,3 +73,24 @@ document.getElementById('departureDate').valueAsDate = new Date(new Date().getTi
 			API.open();
 		});
 	});
+
+	$("#txtFrom").datepicker({
+			numberOfMonths: 1,
+			onSelect: function (selected) {
+				var dt = new Date(selected);
+				dt.setDate(dt.getDate() + 1);
+				$("#txtTo").datepicker("option", "minDate", dt);
+			}
+		});
+		$("#txtTo").datepicker({
+			numberOfMonths: 1,
+			onSelect: function (selected) {
+				var dt = new Date(selected);
+				dt.setDate(dt.getDate() - 1);
+				$("#txtFrom").datepicker("option", "maxDate", dt);
+			}
+		});
+
+
+});
+
