@@ -27,7 +27,7 @@
 .button--secondary
 	display: block
 	border: 2px solid $accent
-	color: $lightPurple
+	color: $accent
 	background-color: #fff
 	text-decoration: none
 	outline: none
@@ -57,3 +57,23 @@
 	text-transform: uppercase
 	padding: 1rem 4rem
 	white-space: nowrap
+
+.more-info__button
+	text-transform: uppercase
+	padding: .5rem 1rem
+	letter-spacing: 1px
+
+.reservation__button
+	text-transform: uppercase
+	padding: .5rem
+	letter-spacing: 1px
+	.fa-lock
+		display: none
+	&:hover
+		.fa-unlock-alt
+			display: none
+		.fa-lock
+			display: inline-block
+		
+
+
