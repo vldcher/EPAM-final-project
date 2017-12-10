@@ -15,28 +15,28 @@
 });
 
 // arrival and departure date of visit
-var today = new Date();
-var tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+// var today = new Date();
+// var tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
 
 // Set values
 // $("#theDate").val(getFormattedDate(today));
 // $("#theTomorrow").val(getFormattedDate(tomorrow));
 
 // Get date formatted as YYYY-MM-DD
-function getFormattedDate (date) {
-    return date.getFullYear()
-        + "-"
-        + ("0" + (date.getMonth() + 1)).slice(-2)
-        + "-"
-        + ("0" + date.getDate()).slice(-2);
-}
+// function getFormattedDate (date) {
+//     return date.getFullYear()
+//         + "-"
+//         + ("0" + (date.getMonth() + 1)).slice(-2)
+//         + "-"
+//         + ("0" + date.getDate()).slice(-2);
+// }
 
 // document.getElementById('arrivalDate').valueAsDate = new Date();
 // document.getElementById('departureDate').valueAsDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
 
 
 $(function() {
-	//menu
+	// plugin for pretty responsive mobile menu
 	var $menu = $("#my-menu").mmenu({
 		"extensions": [
 		"pagedim-black",
@@ -73,7 +73,7 @@ $(function() {
 			API.open();
 		});
 	});
-
+	// add plugin for crossbrowsing date input
 	$("#txtFrom").datepicker({
 			numberOfMonths: 1,
 			onSelect: function (selected) {
@@ -90,6 +90,14 @@ $(function() {
 				$("#txtFrom").datepicker("option", "maxDate", dt);
 			}
 		});
+	// add styles for active menu link
+	 $('.desktop-menu__menu-list a').each(function () {
+        var location = window.location.href;
+        var link = this.href; 
+        if(location == link) {
+            $(this).addClass('active');
+        }
+    });
 
 
 });
