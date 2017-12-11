@@ -1,0 +1,84 @@
+//@import "../../vars"
+
+@media only screen and (max-width : 900px)
+	/**/
+	header
+		.page-header
+			&__logo-menu-wrapper
+				.logo-menu-wrapper__logo
+
+				.desktop-menu-wrapper
+					display: none
+
+		.social, .page-header__button
+
+			display: none
+
+
+@media only screen and (min-width : 700px)
+	header
+
+	main
+		.standart-single
+			&__content
+				.standart-single__info
+					display: flex
+					.room-info
+						margin-top: 0
+						margin-left: 1rem
+				
+
+	footer
+		.footer-bottom
+			flex-direction: row
+			justify-content: space-around
+				
+
+@media only screen and (min-width : 901px)
+	header
+		.page-header
+			display: flex
+			flex-direction: column-reverse
+			&__logo-menu-wrapper
+				padding: .5rem
+				border: none
+				.logo-menu-wrapper__logo
+					img
+						max-width: 120px
+			.logo-menu-wrapper__mobile-menu-button
+				display: none
+		.communications
+			display: flex
+			justify-content: space-around
+			border-bottom: 1px solid #3d303a
+	main
+		.standart-single
+			&__content
+				.standart-single__info
+					.room-info
+						.room-info
+							&__beds, &__capacity, &__rooms-quantity, &__square, &__other-info
+								display: flex
+								justify-content: space-between
+								line-height: 2rem
+								border-bottom: 1px solid $lightPurple
+								.beds, .capacity, .rooms, .square, .other
+									font-size: 1.5rem
+								.beds-info, .capacity-info, .rooms-info, .square-info, .other-info
+									color: $middlePurple
+									font-size: 1.3rem
+								.square-info
+									font-size: 1rem
+							&__other-info
+								border: none
+								margin-top: 3rem
+
+
+
+
+
+	footer
+		.footer-content
+			justify-content: space-evenly
+
+// @media only screen and (min-width : 1200px)
