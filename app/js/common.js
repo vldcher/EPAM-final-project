@@ -98,7 +98,23 @@ $(function() {
             $(this).addClass('active');
         }
     });
+	 //button to top
+	 $(window).scroll(function() {
+		if ($(this).scrollTop() > $(this).height()){
+			$('.top').addClass('active');
+		} else {
+			$('.top').removeClass('active');
+		}
 
+	});
+	//to top scroll
+	 $('.top').click(function() {
+		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
+	});
+	 //preloader
+	$(window).on('load', function() {
+	$('.preloader').delay(500).fadeOut('slow');
+});
 
 });
 
@@ -128,3 +144,4 @@ function showDivs(n) {
 	x[slideIndex-1].style.display = "block";  
 	dots[slideIndex-1].className += " white-circle";
 }
+
