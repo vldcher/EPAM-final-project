@@ -1,0 +1,98 @@
+main
+	.gallery-main
+		font-family: Conduit
+		&__header
+			background-color: #fff
+			padding: 1rem
+			.gallery__header
+				text-transform: uppercase
+				font-family: Conduit
+				color: $middlePurple
+				border-bottom: 1px solid $middlePurple
+				position: relative
+				text-align: center
+				margin-bottom: 2rem
+				font-size: 2.5rem
+				padding: 1rem
+				&::before
+					display: block
+					content: ""
+					position: absolute
+					left: 50%
+					bottom: -4px
+					background: $middlePurple
+					width: 80%
+					height: 1px
+					max-width: 300px
+					transform: translateX(-50%)
+				&::after
+					display: block
+					content: ""
+					position: absolute
+					width: 10px
+					height: 10px
+					transform: rotate(-45deg)
+					background: #fff
+					border: 1px solid $accent
+					box-shadow: 0 0 0 5px #fff
+					left: 50%
+					margin-left: -5px
+					bottom: -7px
+
+			.gallery__description
+				font-size: 1rem
+				line-height: 1.5rem
+				font-family: Roboto
+				text-align: center
+
+		&__content
+			padding: 1rem
+			#gallery
+				max-width: 1200px
+				margin: 0 auto
+				width: 100%
+				#largeImg, #thumbs a
+					width: 100%
+				#largeImg
+					max-width: 700px
+					width: calc(100% - 8px)
+					max-height: 400px
+					height: 100%
+					overflow: hidden
+					border: 1px solid $lightPurple
+					box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.51)
+					margin: auto
+
+				img
+					max-width: 100%
+					max-height: 100%
+					display: block
+					width: 100%
+				#thumbs
+					display: flex
+					flex-wrap: wrap
+					justify-content: center
+					&:after
+						display: table
+						content: ''
+						clear: both
+					margin-top: 2rem
+					a
+						max-width: 140px
+						width: calc(20% - 12px)
+						float: left
+						border: 2px solid $lightPurple
+						margin: 4px
+						transition: border 0.2s ease-out
+						&:hover
+							border-color: $accent
+							transform: scale(1.05)
+							transition: all .45s ease
+
+						img
+							max-width: 136px
+							max-height: 76px
+
+
+						img:hover a
+							border-color: $accent

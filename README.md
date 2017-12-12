@@ -15,6 +15,6 @@ Installation
 
 Live Example
 
-https://vldcher.github.io/GoldenEagleHotel/index.html
+https://vldcher.github.io/HotelLocanda/index.html
 
 # EPAM-final-project
