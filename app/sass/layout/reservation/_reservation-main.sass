@@ -1,0 +1,104 @@
+main
+
+	.reservation-main
+		font-family: Conduit
+		&__header
+			background-color: #fff
+			padding: 1rem
+			.reservation
+				&__header
+					text-transform: uppercase
+					font-family: Conduit
+					color: $middlePurple
+					border-bottom: 1px solid $middlePurple
+					position: relative
+					text-align: center
+					margin-bottom: 2rem
+					font-size: 2.5rem
+					padding: 1rem
+					&::before
+						display: block
+						content: ""
+						position: absolute
+						left: 50%
+						bottom: -4px
+						background: $middlePurple
+						width: 80%
+						height: 1px
+						max-width: 300px
+						transform: translateX(-50%)
+					&::after
+						display: block
+						content: ""
+						position: absolute
+						width: 10px
+						height: 10px
+						transform: rotate(-45deg)
+						background: #fff
+						border: 1px solid $accent
+						box-shadow: 0 0 0 5px #fff
+						left: 50%
+						margin-left: -5px
+						bottom: -7px
+				&__description
+					font-size: 1rem
+					line-height: 1.5rem
+					font-family: Roboto
+					text-align: center
+		&__content
+			background-color: $lightGray
+			// display: flex
+			// align-items: center
+			// justify-content: center
+			.reservation
+				// &__date
+				&__rooms
+					background-color: $lightGray
+					padding: 1rem
+					display: flex
+					flex-wrap: wrap
+					align-items: center
+					justify-content: center
+					.available-room-item
+						background-color: #FFF
+						display: flex
+						padding: .5rem
+						align-items: center
+						justify-content: space-between
+						margin: .5rem
+						width: 280px
+						&__image
+							max-width: 80px
+							img
+								max-width: 80px
+								height: 60px
+						&__arrow
+							&:hover
+								cursor: pointer
+								color: $lightPurple
+								transition: all .5s ease 
+						&__info
+							margin: 0 .5rem
+						.available-room
+							&__header
+								text-transform: uppercase
+								letter-spacing: 1px
+								color: $lightPurple
+								text-align: center
+								font-size: 1.2rem
+							&__guest-quantity
+								font-size: 1rem
+								margin: .2rem 0 .4rem 0
+							&__price
+								font-size: 1.2rem
+								span
+									color: $lightPurple
+								p 
+									font-size: 1rem
+									
+
+
+
+
+
+		

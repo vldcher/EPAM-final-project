@@ -12,8 +12,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="../../img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="../../img/favicon/apple-tstandart-single">
+	<link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="../img/favicon/apple-touch-icon.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
 	<meta name="msapplication-navicon-color" content="#000">
@@ -31,7 +33,7 @@
 			<div class="page-header">
 				<div class="page-header__logo-menu-wrapper">
 					<div class="logo-menu-wrapper__logo">
-						<a href="../../index.html"><img src="../../img/logo.png" alt="Hotel Locanda"/></a>
+						<a href="../index.html"><img src="../img/logo.png" alt="Hotel Locanda"/></a>
 					</div>
 					<!-- mobile menu hamburger icon -->
 					<div class="logo-menu-wrapper__mobile-menu-button">
@@ -44,20 +46,20 @@
 					<!-- 	mobile menu -->
 					<nav id="my-menu">
 						<ul>
-							<li><a href="../../index.html">Home</a></li>
-							<li><a href="../reservation.html">Reservation</a></li>
-							<li><a href="../about-us.html">About us</a></li>
-							<li><a href="../gallery.html">Gallery</a></li>
-							<li><a href="../accomodation.html">Accomodation
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="reservation.html">Reservation</a></li>
+							<li><a href="about-us.html">About us</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="accomodation.html">Accomodation
 							</a>
 							<ul class="submenu">
-								<li><a href="standart-single.html">Standart single</a></li>
-								<li><a href="standart-double.html">Standart double</a></li>
-								<li><a href="junior-suite.html">Junior suite</a></li>
-								<li><a href="suite.html">Suite</a></li>
+								<li><a href="rooms/standart-single.html">Standart single</a></li>
+								<li><a href="rooms/standart-double.html">Standart double</a></li>
+								<li><a href="rooms/junior-suite.html">Junior suite</a></li>
+								<li><a href="rooms/suite.html">Suite</a></li>
 							</ul>
 						</li>
-						<li><a href="../services.html">Services</a>
+						<li><a href="services.html">Services</a>
 							<ul>
 								<li><a href="/services/spa/">SPA</a></li>
 								<li><a href="/services/swimming-pool/">Swimming pool</a></li>
@@ -74,20 +76,20 @@
 				<div class="desktop-menu-wrapper">
 					<div class="desktop-menu" id="desktop-menu">
 						<ul class="desktop-menu__menu-list">
-							<li class="menu-list__item"><a href="../../index.html" class="item__link">Home</a></li>
-							<li class="menu-list__item"><a href="../reservation.html" class="item__link">Reservation</a></li>
-							<li class="menu-list__item"><a href="../about-us.html" class="item__link">About us</a></li>
-							<li class="menu-list__item"><a href="../gallery.html" class="item__link">Gallery</a></li>
-							<li class="menu-list__item"><a href="../accomodation.html" class="item__link">Accomodation
+							<li class="menu-list__item"><a href="../index.html" class="item__link">Home</a></li>
+							<li class="menu-list__item"><a href="reservation.html" class="item__link">Reservation</a></li>
+							<li class="menu-list__item"><a href="about-us.html" class="item__link">About us</a></li>
+							<li class="menu-list__item"><a href="gallery.html" class="item__link">Gallery</a></li>
+							<li class="menu-list__item"><a href="accomodation.html" class="item__link">Accomodation
 							</a>
 							<ul class="submenu">
-								<li><a href="standart-single.html">Standart single</a></li>
-								<li><a href="standart-double.html">Standart double</a></li>
-								<li><a href="junior-suite.html">Junior suite</a></li>
-								<li><a href="suite.html">Suite</a></li>
+								<li><a href="rooms/standart-single.html">Standart single</a></li>
+								<li><a href="rooms/standart-double.html">Standart double</a></li>
+								<li><a href="rooms/junior-suite.html">Junior suite</a></li>
+								<li><a href="rooms/suite.html">Suite</a></li>
 							</ul>
 						</li>
-						<li class="menu-list__item"><a href="../services.html" class="item__link">Services</a>
+						<li class="menu-list__item"><a href="services.html" class="item__link">Services</a>
 							<ul class="submenu">
 								<li><a href="#">SPA</a></li>
 								<li><a href="#">Swimming pool</a></li>
@@ -95,7 +97,7 @@
 								<li><a href="#">Conference</a></li>
 							</ul>
 						</li>
-						<li class="menu-list__item"><a href="../contacts.html" class="item__link">Contacts</a></li>
+						<li class="menu-list__item"><a href="#" class="item__link">Contacts</a></li>
 					</ul>	
 				</div>
 			</div>
@@ -122,55 +124,106 @@
 		</div>
 	</div>
 </header>
-
 <main>
-	<div class="standart-single">
-		<div class="standart-single__content">
-			<h3 class="standart-single__header">
-				Standart single
+	<div class="reservation-main">
+		<div class="reservation-main__header">
+			<h3 class="reservation__header">
+				Reservation
 			</h3>
-			<div class="standart-single__info">
-				<div class="slider-wrapper">
-					<div class="slider">
-						<img class="mySlides" src="../../img/rooms/standart-single/standart-single-1.jpg" alt="room photo">
-						<img class="mySlides" src="../../img/rooms/standart-single/standart-single-2.jpg" alt="room photo">
-						<img class="mySlides" src="../../img/rooms/standart-single/standart-single-3.jpg" alt="room photo">
-						<div class="slider-controls">
-							<div class="arrow-left" onclick="plusDivs(-1)">&#10094;</div>
-							<div class="arrow-right" onclick="plusDivs(1)">&#10095;</div>
-							<div class="circles">
-								<span class="circle demo" onclick="currentDiv(1)"></span>
-								<span class="circle demo" onclick="currentDiv(2)"></span>
-								<span class="circle demo" onclick="currentDiv(3)"></span>
-							</div>
-							
+			<p class="reservation__description">
+				With the help of the form below you can book our rooms online and get a guaranteed reservation. For payment, you can use a credit card, electronic money, a cashless payment or pay an order on the spot.
+			</p>
+		</div>
+		<div class="reservation-main__content">
+	<!-- 		<div class="reservation__date">
+			</div> -->
+			<div class="reservation__rooms">
+				<div class="available-room-item">
+					<div class="available-room-item__image">
+						<a href="#"><img src="../img/gallery/thumbs/12.jpg" alt="room photo"></a>
+					</div>
+					<div class="available-room-item__info">
+						<div class="available-room__header">
+							Standart single
+						</div>
+						<div class="available-room__guest-quantity">
+							Accommodation for :
+							<p>1 guest</p>
+						</div>
+						<div class="available-room__price">
+							<span>From: 80 <i class="fa fa-usd"></i> </span>
+							<p>per night</p>
 						</div>
 					</div>
+					<div class="available-room-item__arrow">
+						<i class="fa fa-chevron-right"></i>
+					</div>
 				</div>
-				<div class="room-info">
-					<div class="room-info__beds">
-						<div class="beds">Beds:</div>
-						<div class="beds-info">Bed (king size bed) and sofa</div>
+				<div class="available-room-item">
+					<div class="available-room-item__image">
+						<a href="#"><img src="../img/gallery/thumbs/15.jpg" alt="room photo"></a>
 					</div>
-					<div class="room-info__capacity">
-						<div class="capacity">Capacity:</div>
-						<div class="capacity-info"> 4 guests</div>
-					</div>
-					<div class="room-info__rooms-quantity">
-						<div class="rooms">Rooms:</div>
-						<div class="rooms-info">3</div>
-					</div>
-					<div class="room-info__square">
-						<div class="square">Square:</div>
-						<div class="square-info">62 m<sup>2</sup></div>
-					</div>
-					<div class="room-info__other-info">
-						<div class="other">Other:</div>
-						<div class="other-info">Accommodation includes SPA services (hamam, sauna, swimming pool) and use of the gym. Also 24-hour room service.
+					<div class="available-room-item__info">
+						<div class="available-room__header">
+							Standart double
+						</div>
+						<div class="available-room__guest-quantity">
+							Accommodation for :
+							<p>1 + 1 guests</p>
+						</div>
+						<div class="available-room__price">
+							<span>From: 100 <i class="fa fa-usd"></i> </span>
+							<p>per night</p>
 						</div>
 					</div>
+					<div class="available-room-item__arrow">
+						<i class="fa fa-chevron-right"></i>
+					</div>
 				</div>
+				<div class="available-room-item">
+					<div class="available-room-item__image">
+						<a href="#"><img src="../img/gallery/thumbs/17.jpg" alt="room photo"></a>
+					</div>
+					<div class="available-room-item__info">
+						<div class="available-room__header">
+							Suite
+						</div>
+						<div class="available-room__guest-quantity">
+							Accommodation for :
+							<p>2 + 1 guests</p>
+						</div>
+						<div class="available-room__price">
+							<span>From: 180 <i class="fa fa-usd"></i> </span>
+							<p>per night</p>
+						</div>
+					</div>
+					<div class="available-room-item__arrow">
+						<i class="fa fa-chevron-right"></i>
+					</div>
+				</div>
+				<div class="available-room-item">
+					<div class="available-room-item__image">
+						<a href="#"><img src="../img/gallery/thumbs/5.jpg" alt="room photo"></a>
+					</div>
+					<div class="available-room-item__info">
+						<div class="available-room__header">
+							Junior suite
+						</div>
+						<div class="available-room__guest-quantity">
+							Accommodation for : 
+							<p>2 guests</p>
+						</div>
+						<div class="available-room__price">
+							<span>From: 120 <i class="fa fa-usd"></i> </span>
+							<p>per night</p>
+						</div>
+					</div>
+					<div class="available-room-item__arrow">
+						<i class="fa fa-chevron-right"></i>
+					</div>
+				</div>	
 			</div>
+			
 		</div>
 	</div>
 </main>
@@ -221,15 +274,15 @@
 			<p>&copy; 2017 All rights reserved</p>
 		</div>
 		<div class="bottom__logo">
-			<img src="../../img/logo.png" alt="Hotel Locanda"/>
+			<img src="../img/logo.png" alt="Hotel Locanda"/>
 		</div>
 	</div>
 </footer>
 
 
 </div>
-<link rel="stylesheet" href="../../css/main.min.css">
-<script src="../../js/scripts.min.js"></script>
+<link rel="stylesheet" href="../css/main.min.css">
+<script src="../js/scripts.min.js"></script>
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css"/>
