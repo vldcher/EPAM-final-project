@@ -94,8 +94,8 @@ var hamburger = document.querySelector(".hamburger");
 		e.preventDefault();
 
 			// menu.classList.contains('open')?menu.classList.remove('open'):menu.classList.add('open');
-// Создать ксс класс для моб меню
 });
+	
 // arrival and departure date of visit
 // var today = new Date();
 // var tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);

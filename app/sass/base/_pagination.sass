@@ -1,0 +1,22 @@
+.news-pagination-container
+	display: flex
+	padding: 0 1rem 1rem 1rem
+	.pagination
+		width: 280px
+		margin: auto
+		display: flex
+		justify-content: space-between
+		li
+			display: inline-block
+			background-color: $middlePurple
+			padding: .5rem 1rem
+			&:hover
+				background-color: $accent
+				cursor: pointer
+
+			a
+				text-decoration: none
+				color: #fff
+		
+		.active
+			background-color: $accent

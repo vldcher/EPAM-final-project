@@ -1,0 +1,18 @@
+{
+	"news": [{
+		"id" : 1,
+		"date": "17 may 2015",
+		"header": "Black Friday sale for junior suite rooms",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, porro animi voluptas facere sunt reiciendis molestias amet nisi. Iste, nihil?"
+	}, {
+		"id" : 2,
+		"date": "11 june 2005",
+		"header": "Something was happened last night",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, quis!"
+	},{
+		"id" : 3,
+		"date": "5 april 2017",
+		"header": "Two new suite room for our guests",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, eaque! Alias cum assumenda deserunt, aliquam ducimus maiores reiciendis cumque reprehenderit repellat quisquam nemo vel nostrum quae tenetur officia dicta ratione. Fuga quam magnam numquam laborum saepe placeat amet? Tempora, esse."
+	},]
+}

@@ -21,6 +21,10 @@ var gulp           = require('gulp'),
 gulp.task('common-js', function() {
 	return gulp.src([
 		'app/js/common.js',
+		'app/js/gallery.js',
+		// 'app/js/pagination.js',
+		// 'app/js/news.js',
+		// 'app/js/slider.js',
 		])
 	.pipe(concat('common.min.js'))
 	.pipe(uglify())
@@ -59,7 +63,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 	gulp.watch('app/sass/**/**/**/*.sass', ['sass']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js'], browserSync.reload);
+	gulp.watch(['libs/**/*.js', 'app/js/common.js', 'app/js/gallery.js', 'app/js/slider.js', 'app/js/pagination.js'], ['js'], browserSync.reload);
 
 	gulp.watch('dist/sass/**/*.sass', ['sass']);
 	// gulp.watch('app/*.html', function(){

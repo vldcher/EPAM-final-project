@@ -1,0 +1,32 @@
+{
+	"rooms": [{
+		"id" : 1,
+		"type": "standart single",
+		"quantity": 15,
+		"rooms-in-number": 1,
+		"room-capacity": 1,
+		"square": 38
+	}, {
+		"id" : 2,
+		"type": "standart double",
+		"quantity": 17,
+		"rooms-in-number": 2,
+		"room-capacity": 2,
+		"square": 45
+	}, {
+		"id" : 3,
+		"type": "junior suite",
+		"quantity": 8,
+		"rooms-in-number": 3,
+		"room-capacity": 3,
+		"square": 57
+	},
+	{
+		"id" : 4,
+		"type": "suite",
+		"quantity": 6,
+		"rooms-in-number": 3,
+		"room-capacity": 3,
+		"square": 75
+	},]
+}
