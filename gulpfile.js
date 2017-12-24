@@ -63,13 +63,14 @@ gulp.task('sass', function() {
 
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 	gulp.watch('app/sass/**/**/**/*.sass', ['sass']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js', 'app/js/gallery.js', 'app/js/slider.js', 'app/js/pagination.js'], ['js'], browserSync.reload);
+	gulp.watch(['libs/**/*.js', 'app/js/common.js', 'app/js/gallery.js', 'app/js/slider.js', 'app/js/pagination.js', 'app/js/modal-window.js', 'app/js/reservation.js' ], ['js'], browserSync.reload);
 
 	gulp.watch('dist/sass/**/*.sass', ['sass']);
 	// gulp.watch('app/*.html', function(){
 	// 	gulp.start('build');
 	// });
 	gulp.watch('app/**/*.html', browserSync.reload);
+	gulp.watch('app/html/**/*.html', browserSync.reload); // work without this?
 
 });
 

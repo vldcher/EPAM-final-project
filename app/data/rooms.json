@@ -5,21 +5,27 @@
 		"quantity": 15,
 		"rooms-in-number": 1,
 		"room-capacity": 1,
-		"square": 38
-	}, {
+		"square": 38,
+		"price": 100,
+		"available": true
+	}, 
+
+	{
 		"id" : 2,
 		"type": "standart double",
 		"quantity": 17,
 		"rooms-in-number": 2,
 		"room-capacity": 2,
-		"square": 45
+		"square": 45,
+		"price": 150
 	}, {
 		"id" : 3,
 		"type": "junior suite",
 		"quantity": 8,
 		"rooms-in-number": 3,
 		"room-capacity": 3,
-		"square": 57
+		"square": 57,
+		"price": 200
 	},
 	{
 		"id" : 4,
@@ -27,6 +33,7 @@
 		"quantity": 6,
 		"rooms-in-number": 3,
 		"room-capacity": 3,
-		"square": 75
+		"square": 75,
+		"price": 300
 	},]
 }
