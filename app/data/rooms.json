@@ -1,10 +1,11 @@
-{
-	"rooms": [{
+[ 
+	{
 		"id" : 1,
 		"type": "standart single",
+		"imageName": "standart-single",
 		"quantity": 15,
-		"rooms-in-number": 1,
-		"room-capacity": 1,
+		"roomsInNumber": 1,
+		"roomCapacity": 1,
 		"square": 38,
 		"price": 100,
 		"available": true
@@ -13,27 +14,30 @@
 	{
 		"id" : 2,
 		"type": "standart double",
+		"imageName": "standart-double",
 		"quantity": 17,
-		"rooms-in-number": 2,
-		"room-capacity": 2,
+		"roomsInNumber": 2,
+		"roomCapacity": 2,
 		"square": 45,
 		"price": 150
 	}, {
 		"id" : 3,
 		"type": "junior suite",
+		"imageName": "junior-suite",
 		"quantity": 8,
-		"rooms-in-number": 3,
-		"room-capacity": 3,
+		"roomsInNumber": 3,
+		"roomCapacity": 3,
 		"square": 57,
 		"price": 200
 	},
 	{
 		"id" : 4,
 		"type": "suite",
+		"imageName": "suite",
 		"quantity": 6,
-		"rooms-in-number": 3,
-		"room-capacity": 3,
+		"roomsInNumber": 3,
+		"roomCapacity": 3,
 		"square": 75,
 		"price": 300
-	},]
-}
+	}
+]
