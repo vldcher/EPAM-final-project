@@ -18,7 +18,7 @@ $(function() {
 					output += '</div>';
 
 					output += '<div class="available-room__price">';
-						output += '<p class="price-field">'+ 'Price :' + val.price + '</p>';
+						output += '<p class="price-field">'+ 'Price :' + val.price + '<i class="fa fa-usd">'+'</i>' +'</p>';
 						output += '<p class="per-night">' + 'per night' +'</p>';
 					output += '</div>';
 
@@ -46,9 +46,6 @@ $(function() {
 						output += '</div>';
 					output += '</div>';
 				output += '</div>';
-
-
-				
 
 			
 			output += '</div>';
