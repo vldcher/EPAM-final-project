@@ -13,13 +13,17 @@ $(function() {
 					output += '</div>';
 
 					output += '<div class="available-room__guest-quantity">';
-						output += '<p>'+ 'Accomodation for :' +'</p>';
+						output += '<p>'+ 'Accomodation for : ' +'</p>';
 						output += '<p class="room-guest-quantity">'+ val.roomCapacity + 'guest(s)' +'</p>';
 					output += '</div>';
 
 					output += '<div class="available-room__price">';
-						output += '<p class="price-field">'+ 'Price :' + val.price + '<i class="fa fa-usd">'+'</i>' +'</p>';
+						output += '<p class="price-field">'+ 'Price : ' + val.price + '<i class="fa fa-usd">'+'</i>' +'</p>';
 						output += '<p class="per-night">' + 'per night' +'</p>';
+					output += '</div>';
+
+					output += '<div class="available-room__quantity">';
+						output += '<p class="available-quantity-field">'+ 'Available rooms : ' + '<span class="room-quantity--accent">' + val.quantity + '</span>' +'</p>';
 					output += '</div>';
 
 				output += '</div>';
@@ -32,7 +36,7 @@ $(function() {
 
 							output += '<div class="mpopup-head">';
 								output += '<span class="close">' + 'x' + '</span>';
-								output += '<h2>' + 'Reservation' + '</h2>';
+								output += '<h2>' + 'Reservation' + ' room '+ val.type+'</h2>';
 							output += '</div>';
 
 							output += '<div class="mpopup-main">';
@@ -46,11 +50,22 @@ $(function() {
 						output += '</div>';
 					output += '</div>';
 				output += '</div>';
-
 			
 			output += '</div>';
 		});
 	output += '</div>';
 	$('#update').html(output);
+
+	// open\close modal windows
+		$('.mpopupLink').bind('click', function(){
+			$('.mpopupBox').css("display", "block");
+		});
+
+		$('.close').bind('click', function() {
+			$('.mpopupBox').css("display","none");
+		});
+
+
 }); //get JSON
+
 });
