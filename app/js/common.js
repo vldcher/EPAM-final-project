@@ -37,7 +37,7 @@ $(function() {
 			API.open();
 		});
 	});
-	// add plugin for crossbrowsing date input
+	// plugin for crossbrowsing date input
 	$("#txtFrom").datepicker({
 		numberOfMonths: 1,
 		onSelect: function (selected) {
@@ -71,7 +71,7 @@ $(function() {
 	 	}
 
 	 });
-	//to top scroll
+	//to top scrolling when click to top button
 	$('.top').click(function() {
 		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
 	});
@@ -82,39 +82,10 @@ $(function() {
 
 	});
 
-//Vanila 
+//Mobile menu hamburger
 var hamburger = document.querySelector(".hamburger");
 
 	hamburger.addEventListener("click", function(e) {
 	hamburger.classList.toggle("is-active");
 	e.preventDefault();
 });
-
-//Slider
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-	showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-	showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-	var i;
-	var x = document.getElementsByClassName("mySlides");
-	var dots = document.getElementsByClassName("demo");
-	if (n > x.length) {slideIndex = 1}    
-		if (n < 1) {slideIndex = x.length}
-			for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";  
-			}
-			for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" white-circle", "");
-			}
-			x[slideIndex-1].style.display = "block";  
-			dots[slideIndex-1].className += " white-circle";
-		}
-
