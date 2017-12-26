@@ -1,5 +1,4 @@
 main
-
 	.reservation-main
 		font-family: Conduit
 		&__header
@@ -107,6 +106,39 @@ main
 										color: $accent
 										font-size: 1.1rem
 										font-weight: bold
+
+		&__filtering
+			.filtering
+				&__header
+					p
+						font-size: 1.3rem
+						text-align: center
+
+				&__content
+					form
+						.filter
+							&-fileds
+								display: flex
+								margin: 1rem 0
+								justify-content: space-around
+								.field-from, .field-to
+									p
+										margin-bottom: 1rem
+									input[type="number"]
+										border: 1px solid $middlePurple
+										padding: 0 2rem
+								
+
+
+							&-buttons
+								display: flex
+								justify-content: space-around
+
+								input[type="submit"], input[type="reset"]
+									margin: 1rem
+
+						
+
 
 								
 

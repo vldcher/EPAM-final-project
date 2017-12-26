@@ -134,8 +134,32 @@
 				With the help of the form below you can book our rooms online and get a guaranteed reservation. For payment, you can use a credit card, electronic money, a cashless payment or pay an order on the spot.
 			</p>
 		</div>
+		<div class="reservation-main__filtering">
+			<div class="filtering__header">
+				<p>Indicate price range:</p>
+			</div>
+			<div class="filtering__content">
+				<form action="javascript:void(0);">
+					<div class="filter-fileds">
+						<div class="field-from">
+							<p>From <i class="fa fa-usd"></i> :</p>
+							<input type="number" name="from price" value="" min="0" max="1000" step="10">
+						</div>
+						<div class="field-to">
+							<p>To <i class="fa fa-usd"></i> :</p>
+							<input type="number" name="to price" value="" min="0" max="1000" step="10">
+						</div>
+					</div>
+					<div class="filter-buttons">
+						<input type="submit" value="Ok" class="filter-ok__button button--primary">
+						<input type="reset" value="Clear" class="filter-clear__button button--secondary">
+					</div>
+				</form>
+			</div>
+			
+		</div>
 		<div class="reservation-main__content" id="update">
-	<!-- 	content from JSON -->
+			<!-- 	content from JSON -->
 		</div>
 	</div>
 </main>

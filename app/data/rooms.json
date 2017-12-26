@@ -8,7 +8,11 @@
 		"roomCapacity": 1,
 		"square": 38,
 		"price": 100,
-		"available": true
+		"available": true,
+		"roles" : {
+		"availableFrom": "somedate",
+		"availableTo": "somedate"
+		}
 	}, 
 
 	{
