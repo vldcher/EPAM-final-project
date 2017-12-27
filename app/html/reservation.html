@@ -143,16 +143,16 @@
 					<div class="filter-fileds">
 						<div class="field-from">
 							<p>From <i class="fa fa-usd"></i> :</p>
-							<input type="number" name="from price" value="" min="0" max="1000" step="10">
+							<input type="number" name="from price" id="from" min="0" max="1000" >
 						</div>
 						<div class="field-to">
 							<p>To <i class="fa fa-usd"></i> :</p>
-							<input type="number" name="to price" value="" min="0" max="1000" step="10">
+							<input type="number" name="to price" id="to" min="0" max="1000" required>
 						</div>
 					</div>
 					<div class="filter-buttons">
-						<input type="submit" value="Ok" class="filter-ok__button button--primary">
-						<input type="reset" value="Clear" class="filter-clear__button button--secondary">
+						<input type="submit" value="Ok" id="search" class="filter-ok__button button--primary">
+						<input type="reset" value="Clear" id="clearFilter" class="filter-clear__button button--secondary">
 					</div>
 				</form>
 			</div>
@@ -222,6 +222,8 @@
 
 <script src="../js/reservation.js"></script>
 <script src="../js/modal-window.js"></script>
+<script src="../js/filtering.js"></script>
+
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css"/>

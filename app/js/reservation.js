@@ -1,6 +1,6 @@
 $(function() {
 	$.getJSON('../data/rooms.json', function(data) {
-	var output = '<div class="reservation__rooms">';
+	var output = '<div class="reservation__rooms" id="allRoomsContainer">';
 		$.each(data, function(key, val) {
 			output += '<div class="available-room-item">';
 				output += '<div class="available-room-item__image">';

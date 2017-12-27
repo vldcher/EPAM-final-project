@@ -137,11 +137,11 @@
 			<div class="find-room__date-info">
 				<div class="arrival-date">
 					<p>Arriaval date:</p>
-					<input type="text" id="txtFrom" required/>
+					<input type="text" id="txtFrom" pattern="^\d{1,2}.\d{1,2}.\d{4}$" placeholder="mm.dd.yyyy" required/>
 				</div>
 				<div class="departure-date">
 					<p>Departure date:</p>
-					<input type="text" id="txtTo" required/>
+					<input type="text" id="txtTo" pattern="^\d{1,2}.\d{1,2}.\d{4}$" placeholder="mm.dd.yyyy" required/>
 				</div>
 			</div>
 			<div class="find-room__quantity-info">
