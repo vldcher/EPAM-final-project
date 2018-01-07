@@ -76,15 +76,14 @@ $(function() {
 		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
 	});
 	 //preloader
-	 $(window).on('load', function() {
+	 // $(window).on('load', function() {
 	 	$('.preloader').delay(500).fadeOut('slow');
-	 });
+	 // });
 
 	});
 
 //Mobile menu hamburger
 var hamburger = document.querySelector(".hamburger");
-
 	hamburger.addEventListener("click", function(e) {
 	hamburger.classList.toggle("is-active");
 	e.preventDefault();

@@ -147,7 +147,7 @@
 						</div>
 						<div class="field-to">
 							<p>To <i class="fa fa-usd"></i> :</p>
-							<input type="number" name="to price" id="to" min="0" max="1000" required>
+							<input type="number" name="to price" id="to" min="0" max="1000" >
 						</div>
 					</div>
 					<div class="filter-buttons">
@@ -160,6 +160,59 @@
 		</div>
 		<div class="reservation-main__content" id="update">
 			<!-- 	content from JSON -->
+		</div>
+
+		<div class="reservation-main__popup mpopup mpopupBox">
+			<div class="mpopup-content">
+				<div class="mpopup-head">
+					<span class="close">x</span>
+					<h2 class="mpopup-head__header">Reservation details</h2>
+				</div>
+				<div class="mpopup-main">
+					<div class="mpopup-main__room-info">
+						<div class="reservation-popup-details">
+							<div class="details-total-price">
+								<div class="total-price__header">
+									<h6>Total price:</h6> 
+								</div>
+								<div class="total-price__value">
+									<span>200$</span>
+								</div>
+							</div>
+							<div class="details-feedback">
+
+								<form action="#">
+									<fieldset>
+										<div class="feedback__header">
+											<h5>How to contact you?</h5>
+										</div>
+										<div class="feedback__email">
+											<p>At this address will be sent a booking confirmation with the possibility of cancellation of the reservation</p>
+											<input type="email" name="email" value="Your email">
+										</div>
+										<div class="feedback__phone">
+											<p>Please enter a phone number. Example + 380XXXXXXXX</p>
+											<input type="phone" name="phone" value="Your phone">
+										</div>
+										<div class="feedback__button">
+											<button type="submit" class="reservation__button button--primary">
+												<span class="reservation__text">
+													reservation
+												</span>
+												<i class="reservation__lock fa fa-unlock-alt"></i>
+												<i class="reservation__lock fa fa-lock"></i>
+											</button>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mpopup-foot">
+					<p> Hotel Locanda </p>
+				</div>
+			</div>
 		</div>
 	</div>
 </main>
@@ -219,8 +272,8 @@
 </div>
 <link rel="stylesheet" href="../css/main.min.css">
 <script src="../js/scripts.min.js"></script>
-
 <script src="../js/reservation.js"></script>
+
 <script src="../js/modal-window.js"></script>
 <script src="../js/filtering.js"></script>
 
