@@ -59,13 +59,25 @@ $(function() {
 	// open\close modal windows
 		$('.mpopupLink').bind('click', function(){
 			$('.mpopupBox').css("display", "block");
+			//lock page scrolling
+			$("html,body").css("overflow","hidden");
 		});
 
 		$('.close').bind('click', function() {
 			$('.mpopupBox').css("display","none");
+			//unlock page scrolling
+			$("html,body").css("overflow","auto");
 		});
 
 
-}); //get JSON
+	}); //get JSON
+
+// 	$('#myform').submit(function(e) {
+//     this.submit();
+//     setTimeout(function() {
+//         alert('The room was successfully reserved, a letter with information about the order sent to your e-mail address');
+//     }, 100);
+// });
+			
 
 });

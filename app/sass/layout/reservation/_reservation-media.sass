@@ -24,9 +24,44 @@
 							&-buttons
 								justify-content: flex-start
 
+@media only screen and (min-width : 700px)
+	main
+		.reservation-main
+			&__popup
+				.mpopup-content
+					max-width: 500px
+					.mpopup
+						&-head
+						&-main
+							&__room-info
+								.reservation-popup-details
+									.details
+										&-total-price
+											display: flex
+											font-size: 1.5rem
+											margin: 1rem 0
+											.total-price
+												&__header
+													margin-right: 1rem
+												&__value
+													color: $accent
+										&-feedback
+											font-size: 1.2em
+											
+											form
+												.feedback
+													&__header
+													&__email, &__phone
+														display: flex
+														flex-direction: column
+														align-items: center
+														text-align: center
+													&__button
+														display: flex
+														justify-content: center
+														margin: 1rem 0
 
-
-						
+							
 
 
 @media only screen and (min-width : 901px)
