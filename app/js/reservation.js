@@ -64,7 +64,7 @@ $(function() {
 		});
 
 	$('.close').bind('click', function() {
-		$('.mpopupBox').hide("slow");
+		$('.mpopupBox').hide("fast");
 			//unlock page scrolling
 			$("html,body").css("overflow","auto");
 		});
@@ -72,7 +72,7 @@ $(function() {
 	$(document).mouseup(function (e) {
     var container = $(".mpopupBox");
     if (container.has(e.target).length === 0){
-        container.hide("slow");
+        container.hide("fast");
         $("html,body").css("overflow","auto");
     }
 });

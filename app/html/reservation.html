@@ -139,15 +139,15 @@
 				<p>Indicate price range:</p>
 			</div>
 			<div class="filtering__content">
-				<form action="javascript:void(0);">
+				<form action="javascript:void(0);" method="post">
 					<div class="filter-fileds">
 						<div class="field-from">
 							<p>From <i class="fa fa-usd"></i> :</p>
-							<input type="number" name="from price" id="from" min="0" max="1000" >
+							<input type="number" name="from price" id="from" min="0" max="1000" required>
 						</div>
 						<div class="field-to">
 							<p>To <i class="fa fa-usd"></i> :</p>
-							<input type="number" name="to price" id="to" min="0" max="1000" >
+							<input type="number" name="to price" id="to" min="0" max="1000" required>
 						</div>
 					</div>
 					<div class="filter-buttons">
@@ -156,8 +156,21 @@
 					</div>
 				</form>
 			</div>
+		</div>
+		<!-- sorting start -->
+		<div class="reservation-main__sorting">
+			<div class="sorting__header">
+				<p>Sorting rooms:</p>
+			</div>
+			<div class="sorting__content">
+				<select name="sorting" id="sortingByPriceSelect" class="sorting-select">
+					<option value="cheap-first" class="select-option">from cheap to expensive</option>
+					<option value="expensive-first" class="select-option">from expensive to cheap</option>
+				</select>
+			</div>
 			
 		</div>
+		<!-- sorting end -->
 		<div class="reservation-main__content" id="update">
 			<!-- 	content from JSON -->
 		</div>
@@ -181,7 +194,7 @@
 							</div>
 							<div class="details-feedback">
 
-								<form action="#" id="myForm">
+								<form action="#" method="get | post">
 									<fieldset>
 										<div class="feedback__header">
 											<h5>How to contact you?</h5>
@@ -273,6 +286,7 @@
 <link rel="stylesheet" href="../css/main.min.css">
 <script src="../js/scripts.min.js"></script>
 <script src="../js/reservation.js"></script>
+<script src="../js/sorting.js"></script>
 
 <script src="../js/modal-window.js"></script>
 <script src="../js/filtering.js"></script>
