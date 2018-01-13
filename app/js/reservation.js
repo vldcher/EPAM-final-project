@@ -30,29 +30,10 @@ $(function() {
 
 			output += '<div class="available-room-item__arrow">';
 			output += '<a href="javascript:void(0);" class="mpopupLink">' +' <i class="fa fa-chevron-right">' + '</i>'+'</a>';
+			output += '</div>';
 
-					// output += '<div class="mpopup mpopupBox">';
-					// 	output += '<div class="mpopup-content">';
-
-					// 		output += '<div class="mpopup-head">';
-					// 			output += '<span class="close">' + 'x' + '</span>';
-					// 			output += '<h2>' + 'Reservation' + ' room '+ val.type+'</h2>';
-					// 		output += '</div>';
-
-					// 		output += '<div class="mpopup-main">';
-					// 			output += '<p>' + 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam corporis quas repellendus unde minima, consectetur commodi consequatur quam, iure, ea veniam. Tempora cum dolorum quaerat, saepe magni eaque repudiandae aperiam!' + '</p>';
-					// 		output += '</div>';
-
-					// 		output += '<div class="mpopup-foot">';
-					// 			output += '<p>' + 'Hotel Locanda' + '</p>';
-					// 		output += '</div>';
-
-					// 	output += '</div>';
-					// output += '</div>';
-					output += '</div>';
-
-					output += '</div>';
-				});
+			output += '</div>';
+		});
 		output += '</div>';
 		$('#update').html(output);
 
@@ -70,16 +51,17 @@ $(function() {
 		});
 
 	$(document).mouseup(function (e) {
-    var container = $(".mpopupBox");
-    if (container.has(e.target).length === 0){
-        container.hide("fast");
-        $("html,body").css("overflow","auto");
-    }
-});
+		var container = $(".mpopupBox");
+		if (container.has(e.target).length === 0){
+			container.hide("fast");
+			$("html,body").css("overflow","auto");
+		}
+	});
 
 
 	}); //get JSON
 
+//after submit message
 // 	$('#myform').submit(function(e) {
 //     this.submit();
 //     setTimeout(function() {
