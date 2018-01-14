@@ -1,7 +1,7 @@
 $(function() {
 
 	var roomsArray = [];
-	var roomsPrices = [];
+	// var roomsPrices = [];
 	function roomsArrayCreate() {
 		$.getJSON('../data/rooms.json', function(json) {
 			
@@ -13,18 +13,24 @@ $(function() {
 			}
 
 			//creating room prices array from JSON data
-			for (var i = 0; i < jsonData.length; i++) {
-				var roomsGlobal = jsonData[i];
-				roomsPrices.push(roomsGlobal.price);
-			}
+			// for (var i = 0; i < jsonData.length; i++) {
+			// 	var roomsGlobal = jsonData[i];
+			// 	roomsPrices.push(roomsGlobal.price);
+			// }
+
+			var cheapFirstArray = roomsArray.slice().sort(compareRoomPrice);
+			var expensiveFirstArray = cheapFirstArray.slice().reverse();
+
+			console.log(cheapFirstArray);
+			console.log(expensiveFirstArray);
 
 		});
 	
 }
 roomsArrayCreate();
 
-console.log(roomsArray);
-console.log(roomsPrices);
+// console.log(roomsArray);
+// console.log(roomsPrices);
 
 
 function compareRoomPrice(a, b) {
@@ -37,19 +43,20 @@ function compareRoomPrice(a, b) {
 		if (b.price != 0 ) return 1;
 		else return -1 
 	}
-    else // if (a.price < b.price) 
-    {
-    	if (a.price != 0 ) return -1;
-    	else return 1;
-    }
-  }
+		else // if (a.price < b.price) 
+		{
+			if (a.price != 0 ) return -1;
+			else return 1;
+		}
+	}
 
+	console.log(roomsArray);
 
-  var cheapFirstArray = roomsArray.slice().sort(compareRoomPrice);
-  var expensiveFirstArray = cheapFirstArray.slice().reverse();
+	// var cheapFirstArray = roomsArray.slice().sort(compareRoomPrice);
+	// var expensiveFirstArray = cheapFirstArray.slice().reverse();
 
-  // console.log(cheapFirstArray);
-  // console.log(expensiveFirstArray);
+	// console.log(cheapFirstArray);
+	// console.log(expensiveFirstArray);
 
 
 	var targetValue; // sorting value

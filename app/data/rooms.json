@@ -7,7 +7,7 @@
 		"roomsInNumber": 1,
 		"roomCapacity": 1,
 		"square": 38,
-		"price": 100,
+		"price": 500,
 		"available": true,
 		"roles" : {
 		"availableFrom": "somedate",
