@@ -1,7 +1,7 @@
 {
   "name": "Hotel",
   "version": "1.0.0",
-  "description": "Final project for EPAM training courses",
+  "description": "Final project for training courses",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

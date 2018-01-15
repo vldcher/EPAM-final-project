@@ -61,13 +61,4 @@ $(function() {
 
 	}); //get JSON
 
-//after submit message
-// 	$('#myform').submit(function(e) {
-//     this.submit();
-//     setTimeout(function() {
-//         alert('The room was successfully reserved, a letter with information about the order sent to your e-mail address');
-//     }, 100);
-// });
-
-
 });
