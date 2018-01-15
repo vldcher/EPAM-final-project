@@ -63,7 +63,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 	gulp.watch('app/sass/**/**/**/*.sass', ['sass']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js', 'app/js/gallery.js', 'app/js/slider.js', 'app/js/pagination.js', 'app/js/reservation.js', 'app/js/filtering.js', 'app/js/modal-window.js', 'app/js/sorting.js' ], ['js'], browserSync.reload);
+	gulp.watch(['libs/**/*.js', 'app/js/common.js', 'app/js/gallery.js', 'app/js/slider.js', 'app/js/pagination.js', 'app/js/reservation.js', 'app/js/filtering.js', 'app/js/modal-window.js', 'app/js/sorting.js', 'app/js/search.js' ], ['js'], browserSync.reload);
 
 	gulp.watch('dist/sass/**/*.sass', ['sass']);
 	// gulp.watch('app/*.html', function(){
@@ -110,25 +110,6 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 			);
 
 });
-
-// gulp.task('deploy', function() {
-
-// 	var conn = ftp.create({
-// 		host:      'hostname.com',
-// 		user:      'username',
-// 		password:  'userpassword',
-// 		parallel:  10,
-// 		log: gutil.log
-// 	});
-
-// 	var globs = [
-// 	'dist/**',
-// 	'dist/.htaccess',
-// 	];
-// 	return gulp.src(globs, {buffer: false})
-// 	.pipe(conn.dest('/path/to/folder/on/server'));
-
-// });
 
 gulp.task('rsync', function() {
 	return gulp.src('dist/**')

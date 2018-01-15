@@ -1,0 +1,57 @@
+main
+	.aboutUs-main
+		font-family: Conduit
+		&__header
+			background-color: #fff
+			padding: 1rem
+			.aboutUs__header
+				text-transform: uppercase
+				font-family: Conduit
+				color: $middlePurple
+				border-bottom: 1px solid $middlePurple
+				position: relative
+				text-align: center
+				margin-bottom: 2rem
+				font-size: 2.5rem
+				padding: 1rem
+				&::before
+					display: block
+					content: ""
+					position: absolute
+					left: 50%
+					bottom: -4px
+					background: $middlePurple
+					width: 80%
+					height: 1px
+					max-width: 300px
+					transform: translateX(-50%)
+				&::after
+					display: block
+					content: ""
+					position: absolute
+					width: 10px
+					height: 10px
+					transform: rotate(-45deg)
+					background: #fff
+					border: 1px solid $accent
+					box-shadow: 0 0 0 5px #fff
+					left: 50%
+					margin-left: -5px
+					bottom: -7px
+
+			.aboutUs__description
+				font-size: 1rem
+				line-height: 1.5rem
+				font-family: Roboto
+				text-align: center
+
+		&__content
+			padding: 1rem
+			display: flex
+			flex-direction: column
+			.content
+				&__hotel-image
+					text-align: right
+					img
+						width: 100%
+				&__hotel-info
