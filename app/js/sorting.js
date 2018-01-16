@@ -30,9 +30,6 @@ $(function() {
 	}
 	roomsArrayCreate();
 
-
-
-
 function compareRoomPrice(a, b) {
 	
 
