@@ -2,7 +2,7 @@ $(function() {
 	$.getJSON('../data/rooms.json', function(data) {
 		var output = '<div class="reservation__rooms" id="allRoomsContainer">';
 		$.each(data, function(key, val) {
-			output += '<div class="available-room-item">';
+			output += '<div class="available-room-item" data-price='+val.price + '>';
 			output += '<div class="available-room-item__image">';
 			output += '<img src="../img/reservation-previews/'+ val.imageName +'.jpg" alt="'+ val.type +'" />';
 			output += '</div>';
@@ -58,6 +58,14 @@ $(function() {
 		}
 	});
 
+		var list = document.getElementsByClassName("available-room-item");
+		var pricesArray = [];
+
+		for (var item of list) {
+			var roomPrices = item.dataset.price;
+			pricesArray.push(roomPrices);
+		}
+		console.log(pricesArray);
 
 	}); //get JSON
 

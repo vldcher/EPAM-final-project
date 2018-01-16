@@ -1,3 +1,4 @@
+// 'use strict';
 $(function() {
 
 	var roomsArray = [];
@@ -21,26 +22,21 @@ $(function() {
 			var cheapFirstArray = roomsArray.slice().sort(compareRoomPrice);
 			var expensiveFirstArray = cheapFirstArray.slice().reverse();
 
-			console.log(cheapFirstArray);
-			console.log(expensiveFirstArray);
+			// console.log(cheapFirstArray);
+			// console.log(expensiveFirstArray);
 
 		});
-	
-}
-roomsArrayCreate();
-
-
-var availableRoomsArray = document.getElementsByClassName('available-room-item');
-	for (var i = 0; i < roomsPrices.length; i++) {
 
 	}
+	roomsArrayCreate();
 
-console.log(availableRoomsArray);
+
+
 
 function compareRoomPrice(a, b) {
 	
 
- if (a.price > b.price) { 
+	if (a.price > b.price) { 
 		if (b.price != 0 ) return 1;
 		else return -1 
 	}
