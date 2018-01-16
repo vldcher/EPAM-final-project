@@ -37,84 +37,27 @@ $(function() {
 		output += '</div>';
 		$('#update').html(output);
 
-	// open\close modal windows
-	$('.mpopupLink').bind('click', function(){
-		$('.mpopupBox').css("display", "block");
-			//lock page scrolling
-			$("html,body").css("overflow","hidden");
+		// open\close modal windows
+		$('.mpopupLink').bind('click', function(){
+			$('.mpopupBox').css("display", "block");
+				//lock page scrolling
+				$("html,body").css("overflow","hidden");
+			});
+
+		$('.close').bind('click', function() {
+			$('.mpopupBox').hide("fast");
+				//unlock page scrolling
+				$("html,body").css("overflow","auto");
+			});
+
+		$(document).mouseup(function (e) {
+			var container = $(".mpopupBox");
+			if (container.has(e.target).length === 0){
+				container.hide("fast");
+				$("html,body").css("overflow","auto");
+			}
 		});
 
-	$('.close').bind('click', function() {
-		$('.mpopupBox').hide("fast");
-			//unlock page scrolling
-			$("html,body").css("overflow","auto");
-		});
-
-	$(document).mouseup(function (e) {
-		var container = $(".mpopupBox");
-		if (container.has(e.target).length === 0){
-			container.hide("fast");
-			$("html,body").css("overflow","auto");
-		}
-	});
-
-		var list = document.getElementsByClassName("available-room-item");
-		var roomsPricesArray = [];
-
-
-		///
-		var divs = $("div.available-room-item");
-		console.log(divs);
-
-		$('#numBnt').on('click', function () {
-    var numericallyOrderedDivs = divs.sort(function (a, b) {
-        return $(a).data("price") > $(b).data("price")
-    });
-    numericallyOrderedDivs.each(function (i, item) {
-        $("#allRoomsContainer").append(item);
-    });
-
-
-		// for (var item of list) {
-
-		// 	var roomPrice = item.dataset.price;
-		// 	roomsPricesArray.push(roomPrice);
-		// 	var cheapFirstArray = roomsPricesArray.slice().sort(compareRoomPrice);
-		// 	var expensiveFirstArray = cheapFirstArray.slice().reverse();
-
-		// 	if (item.dataset.price1 > item.dataset.price2){
-		// 		item.dataset.price1.detach();
-		// 		item.dataset.price2.append(item.dataset.price1);
-		// 	}
-		// 	else {
-		// 		item.dataset.price2.detach();
-		// 		item.dataset.price1.append(item.dataset.price2);
-		// 	}
-
-		// }
-
-		// var cheapFirstArray = pricesArray.slice().sort(compareRoomPrice);
-		// var expensiveFirstArray = cheapFirstArray.slice().reverse();
-
-		// console.log(cheapFirstArray);
-		// console.log(expensiveFirstArray);
-
-
-		function compareRoomPrice(a, b) {
-
-			if (a.price > b.price) { 
-				if (b.price != 0 ) return 1;
-				else return -1 
-			}
-				else // if (a.price < b.price) 
-				{
-					if (a.price != 0 ) return -1;
-					else return 1;
-				}
-			}
-
-	}); //get JSON
-
-});
+	});//get JSON
 
 });

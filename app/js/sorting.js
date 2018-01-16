@@ -1,49 +1,6 @@
 // 'use strict';
 $(function() {
 
-	var roomsArray = [];
-	var roomsPrices = [];
-	function roomsArrayCreate() {
-		$.getJSON('../data/rooms.json', function(json) {
-			
-			var jsonData = json;
-
-			for (var i = 0; i < jsonData.length; i++) {
-				var roomsGlobal = jsonData[i];
-				roomsArray.push(roomsGlobal);
-			}
-
-			// creating room prices array from JSON data
-			for (var i = 0; i < jsonData.length; i++) {
-				var roomsGlobal = jsonData[i];
-				roomsPrices.push(roomsGlobal.price);
-			}
-
-			var cheapFirstArray = roomsArray.slice().sort(compareRoomPrice);
-			var expensiveFirstArray = cheapFirstArray.slice().reverse();
-
-			// console.log(cheapFirstArray);
-			// console.log(expensiveFirstArray);
-
-		});
-
-	}
-	roomsArrayCreate();
-
-function compareRoomPrice(a, b) {
-	
-
-	if (a.price > b.price) { 
-		if (b.price != 0 ) return 1;
-		else return -1 
-	}
-		else // if (a.price < b.price) 
-		{
-			if (a.price != 0 ) return -1;
-			else return 1;
-		}
-	}
-
 	var targetValue; // sorting value
 	var cheapFirstSortValue = 'cheap-first';
 	var expensiveFirstSortValue = 'expensive-first';
@@ -51,19 +8,31 @@ function compareRoomPrice(a, b) {
 
 	sel.onchange = function() {
 		targetValue = this.value;
-
+		var divs = $("div.available-room-item");
 		switch (targetValue) {
+
 			case cheapFirstSortValue:
+					var numericallyOrderedDivs = divs.sort(function (a, b) {
+							return $(a).data("price") > $(b).data("price")
+					});
+					numericallyOrderedDivs.each(function (i, item) {
+							$("#allRoomsContainer").append(item);
+					});
 			console.log( 'cheap first' );
 			break;
+			
 			case expensiveFirstSortValue:
+				var numericallyOrderedDivs = divs.sort(function (a, b) {
+							return $(a).data("price") < $(b).data("price")
+					});
+					numericallyOrderedDivs.each(function (i, item) {
+							$("#allRoomsContainer").append(item);
+					});
 			console.log( 'expensive first' );
 			break;
 			default:
 			console.log( 'cheap first' );
 		}
 	};
-
-
 });
 
