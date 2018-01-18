@@ -63,7 +63,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 	gulp.watch('app/sass/**/**/**/*.sass', ['sass']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js', 'app/js/gallery.js', 'app/js/slider.js', 'app/js/pagination.js', 'app/js/reservation.js', 'app/js/filtering.js', 'app/js/modal-window.js', 'app/js/sorting.js', 'app/js/search.js' ], ['js'], browserSync.reload);
+	gulp.watch(['libs/**/*.js', 'app/js/common.js', 'app/js/gallery.js', 'app/js/slider.js', 'app/js/pagination.js', 'app/js/reservation.js', 'app/js/filtering.js', 'app/js/modal-window.js', 'app/js/sorting.js', 'app/js/search.js', 'app/js/googleMap.js' ], ['js'], browserSync.reload);
 
 	gulp.watch('dist/sass/**/*.sass', ['sass']);
 	// gulp.watch('app/*.html', function(){
@@ -79,12 +79,6 @@ gulp.task('imagemin', function() {
 	.pipe(cache(imagemin()))
 	.pipe(gulp.dest('dist/img')); 
 });
-////// why not work?
-// gulp.task('rigger', function(){
-// 	return gulp.src('app/*.html')
-// 		.pipe(rigger());
-// });
-//////
 
 //for production
 gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {

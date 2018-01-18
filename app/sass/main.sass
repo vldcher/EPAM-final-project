@@ -2,19 +2,19 @@
 @import "libs"
 @import "vars"
 
-@import "base/reset"
+//in all css files
+@import "base/reset"//first
 @import "base/base"
+@import "base/preloader"
+@import "base/mobile-menu"
+
 @import "base/buttons"
 @import "base/img-hover"
 @import "base/slide-border"
 @import "base/style-common"
-@import "base/mobile-menu"
-@import "base/preloader"
 @import "base/top-button"
 @import "base/pagination"
 @import "base/modal-window"
-
-@import "module/modules"
 
 @import "layout/index/header"
 @import "layout/index/main"
@@ -25,12 +25,12 @@
 @import "layout/reservation/reservation-main"
 @import "layout/gallery/gallery-main"
 @import "layout/about/about-main"
+@import "layout/contacts/contacts-main"
 
 @import "layout/rooms/standart-single/standart-single-main"
 @import "layout/rooms/standart-double/standart-double-main"
 @import "layout/rooms/junior-suite/junior-suite-main"
 @import "layout/rooms/suite/suite-main"
-
 
 //media, always in the end
 
@@ -39,6 +39,7 @@
 @import "layout/reservation/reservation-media" 
 @import "layout/gallery/gallery-media"
 @import "layout/about/about-media"
+@import "layout/contacts/contacts-media"
 @import "layout/rooms/standart-single/standart-single-media" 
 
 

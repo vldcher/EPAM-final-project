@@ -1,0 +1,53 @@
+//@import "../../vars"
+
+@media only screen and (max-width : 900px)
+	/**/
+	header
+		.page-header
+			&__logo-menu-wrapper
+				.logo-menu-wrapper__logo
+
+				.desktop-menu-wrapper
+					display: none
+
+		.social, .page-header__button
+
+			display: none
+
+
+@media only screen and (min-width : 700px)
+	main
+
+
+	footer
+		.footer-bottom
+			flex-direction: row
+			justify-content: space-around
+				
+
+@media only screen and (min-width : 901px)
+	header
+		.page-header
+			display: flex
+			flex-direction: column-reverse
+			&__logo-menu-wrapper
+				padding: .5rem
+				border: none
+				.logo-menu-wrapper__logo
+					img
+						max-width: 120px
+			.logo-menu-wrapper__mobile-menu-button
+				display: none
+		.communications
+			display: flex
+			justify-content: space-around
+			border-bottom: 1px solid #3d303a
+	main
+		.accomodation-main
+
+
+	footer
+		.footer-content
+			justify-content: space-evenly
+
+// @media only screen and (min-width : 1200px)
