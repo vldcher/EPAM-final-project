@@ -126,7 +126,23 @@
 </header>
 
 <main>
-	<div id="map"></div>
+	<div class="contacts-main">
+		<div class="contacts__header">
+			<h3 class="contacts__header--big">Hello, dear guest, if you have any questions, please use form below to mail us:</h3>
+		</div>
+		<div class="contacts__feedback-form">
+			<form action="#" target="_blank">
+				<input class="feedback__input" type="text" placeholder="Name" required name="Name">
+				<input class="feedback__input" type="email" placeholder="Email" required name="Email">
+				<textarea class="feedback__input" rows="5" cols="28" type="text" placeholder="Your message here..." required name="Message"></textarea>
+				<button class="feedback__button button--primary" type="submit">SEND</button>
+			</form>
+		</div>
+		<div class="contacts__footer">
+			<div id="map"></div>
+		</div>
+	</div>
+
 </main>
 <!-- 		//= template/footer.html -->
 <footer>
