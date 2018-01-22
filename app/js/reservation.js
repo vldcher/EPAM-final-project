@@ -57,6 +57,11 @@ $(function() {
 				$("html,body").css("overflow","auto");
 			}
 		});
+		$("form").on('submit',function(e){
+				alert("Thank you for booking, order details have been sent to your e-mail.");
+				$('.mpopupBox').hide("fast");
+				$("html,body").css("overflow","auto");
+		});
 
 	});//get JSON
 

@@ -8,11 +8,7 @@
 		"roomCapacity": 1,
 		"square": 38,
 		"price": 500,
-		"available": true,
-		"roles" : {
-		"availableFrom": "somedate",
-		"availableTo": "somedate"
-		}
+		"available": true
 	}, 
 
 	{
@@ -23,7 +19,8 @@
 		"roomsInNumber": 2,
 		"roomCapacity": 2,
 		"square": 45,
-		"price": 150
+		"price": 150,
+		"available": true
 	}, {
 		"id" : 3,
 		"type": "junior suite",
@@ -32,7 +29,8 @@
 		"roomsInNumber": 3,
 		"roomCapacity": 3,
 		"square": 57,
-		"price": 200
+		"price": 200,
+		"available": false
 	},
 	{
 		"id" : 4,
@@ -42,6 +40,51 @@
 		"roomsInNumber": 3,
 		"roomCapacity": 3,
 		"square": 75,
-		"price": 300
+		"price": 300,
+		"available": false
+	},
+	{
+		"id" : 5,
+		"type": "standart single",
+		"imageName": "standart-single",
+		"quantity": 15,
+		"roomsInNumber": 1,
+		"roomCapacity": 1,
+		"square": 38,
+		"price": 500,
+		"available": false
+	}, 
+
+	{
+		"id" : 6,
+		"type": "standart double",
+		"imageName": "standart-double",
+		"quantity": 17,
+		"roomsInNumber": 2,
+		"roomCapacity": 2,
+		"square": 45,
+		"price": 750,
+		"available": true
+	}, {
+		"id" : 7,
+		"type": "junior suite",
+		"imageName": "junior-suite",
+		"quantity": 3,
+		"roomsInNumber": 3,
+		"roomCapacity": 3,
+		"square": 77,
+		"price": 800,
+		"available": true
+	},
+	{
+		"id" : 8,
+		"type": "suite",
+		"imageName": "suite",
+		"quantity": 2,
+		"roomsInNumber": 3,
+		"roomCapacity": 3,
+		"square": 95,
+		"price": 1000,
+		"available": false
 	}
 ]
