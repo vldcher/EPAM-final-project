@@ -35,6 +35,14 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js',
+		'app/js/filtering.js',
+		'app/js/gallery.js',
+		'app/js/googleMap.js',
+		'app/js/pagination.js',
+		'app/js/reservation.js',
+		'app/js/search.js',
+		'app/js/slider.js',
+		'app/js/sorting.js',
 		'app/js/common.min.js', // always last
 		])
 	.pipe(concat('scripts.min.js'))
@@ -97,6 +105,7 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 	var buildJs = gulp.src([
 		'app/js/scripts.min.js',
 		]).pipe(gulp.dest('dist/js'));
+		
 
 	var buildFonts = gulp.src([
 		'app/fonts/**/*',
